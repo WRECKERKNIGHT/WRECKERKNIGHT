@@ -1,0 +1,31 @@
+name: generate-snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub contribution snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: WRECKERKNIGHT
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
+      - name: Push snake to output branch
+        uses: Platane/snk/action/push@v3
+        with:
+          branch: output
+          files: "dist/*"
