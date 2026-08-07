@@ -74,7 +74,7 @@ I'm a full-stack developer and AI product builder who turns raw ideas into polis
 *Generated automatically every day by a scheduled GitHub Action — watch it eat your commit history.*
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/output/dist/github-snake-dark.svg" />
 </p>
 
 ---
