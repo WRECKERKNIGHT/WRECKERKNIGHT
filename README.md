@@ -35,18 +35,6 @@
 
 ---
 
-## 🦖 T-Rex Runner
-
-<p align="center">
-  <a href="https://wayou.github.io/t-rex-runner/">
-    <img src="https://user-images.githubusercontent.com/13794470/37289691-964618be-260a-11e8-8c4a-6df04d6c490d.gif" width="60%" alt="T-Rex Runner — space to jump" />
-  </a>
-</p>
-
-> _Space to jump · beat the streak while the streak beats you._
-
----
-
 ## 🎵 Live Now Playing
 
 <p align="center">
@@ -87,13 +75,21 @@
 
 _Flagship work, live and shipped._
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/projects-overview.svg" width="100%" alt="Animated project overview" />
+</p>
+
 ### 🌐 Personal Portfolio — [wreckerknight.netlify.app](https://wreckerknight.netlify.app)
 
-My personal portfolio website — a full-screen, black & white showroom of the builds, the brand and the story behind WRECKERKNIGHT. Everything I ship, documented and live.
+My personal portfolio website — a full-screen, black & white showroom of the builds, the brand and the story behind WRECKERKNIGHT. It's where the profile aesthetic lives in full: cinematic, monochrome, engineered. Every project is documented, live and one click away — built fast, built clean, built to tell the story.
 
 ### 🎓 URCAREERBUDDY — [github.com/WRECKERKNIGHT/URCAREERBUDDY](https://github.com/WRECKERKNIGHT/URCAREERBUDDY)
 
-A career guidance platform that helps students and professionals find their next move — skills assessment, personalized roadmaps and mentorship, all in one place.
+A career guidance platform that helps students and professionals figure out their next move — and actually take it. Skill assessment, personalized career roadmaps, mentorship matching and AI-powered guidance, all in one place. Built to turn confusion into a clear, actionable plan.
+
+### 🧠 style-your-looks — [github.com/WRECKERKNIGHT/style-your-looks](https://github.com/WRECKERKNIGHT/style-your-looks)
+
+The flagship I'm actively building — an AI face-analysis studio with a parametric 3D styling mannequin and virtual try-on. MediaPipe facial landmarks map your face in real time, and Three.js dresses a parametric 3D model of you. Face analysis, styling, rendered live in the browser.
 
 ---
 

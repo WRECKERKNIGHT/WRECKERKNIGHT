@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Menlo, Consolas, monospace">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05060a"/>
+      <stop offset="100%" stop-color="#0a0912"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f700ff"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+    <mask id="mTitle"><rect x="60" y="44" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="280" begin="0.4s" dur="0.7s" fill="freeze"/></rect></mask>
+    <mask id="mP1n"><rect x="90" y="119" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="590" begin="1.3s" dur="0.9s" fill="freeze"/></rect></mask>
+    <mask id="mP1d1"><rect x="90" y="150" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="640" begin="2.4s" dur="1.1s" fill="freeze"/></rect></mask>
+    <mask id="mP1d2"><rect x="90" y="174" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="480" begin="3.7s" dur="0.9s" fill="freeze"/></rect></mask>
+    <mask id="mP2n"><rect x="90" y="229" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="170" begin="4.8s" dur="0.6s" fill="freeze"/></rect></mask>
+    <mask id="mP2d1"><rect x="90" y="260" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="550" begin="5.7s" dur="1.1s" fill="freeze"/></rect></mask>
+    <mask id="mP2d2"><rect x="90" y="284" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="550" begin="7.0s" dur="0.9s" fill="freeze"/></rect></mask>
+    <mask id="mP3n"><rect x="90" y="339" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="220" begin="8.1s" dur="0.6s" fill="freeze"/></rect></mask>
+    <mask id="mP3d1"><rect x="90" y="370" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="500" begin="9.0s" dur="1.0s" fill="freeze"/></rect></mask>
+    <mask id="mP3d2"><rect x="90" y="394" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="440" begin="10.2s" dur="0.9s" fill="freeze"/></rect></mask>
+    <mask id="mFoot"><rect x="270" y="454" width="0" height="30" fill="#fff"><animate attributeName="width" from="0" to="260" begin="11.3s" dur="0.8s" fill="freeze"/></rect></mask>
+  </defs>
+  <style>
+    @keyframes pulse {0%,100%{opacity:1} 50%{opacity:.35}}
+    @keyframes blink {0%,49%{opacity:1} 50%,100%{opacity:0}}
+    .pulse{animation:pulse 1.6s ease-in-out infinite}
+    .blink{animation:blink 1s steps(1) infinite}
+  </style>
+
+  <rect x="0" y="0" width="800" height="520" rx="20" fill="url(#bg2)" stroke="#2a2438" stroke-width="1.5"/>
+  <rect x="20" y="20" width="760" height="480" rx="14" fill="none" stroke="#1c1626" stroke-width="1"/>
+
+  <rect x="60" y="74" width="0" height="3" fill="url(#accent)">
+    <animate attributeName="width" from="0" to="280" begin="1.2s" dur="0.6s" fill="freeze"/>
+  </rect>
+
+  <g mask="url(#mTitle)"><text x="60" y="62" font-size="26" font-weight="800" fill="#f700ff">PROJECT OVERVIEW</text></g>
+
+  <g>
+    <text x="64" y="135" font-size="20" fill="#f700ff" class="pulse">▸</text>
+  </g>
+  <g mask="url(#mP1n)"><text x="90" y="135" font-size="20" font-weight="700" fill="#f7b733">Personal Portfolio — wreckerknight.netlify.app</text></g>
+  <text x="740" y="135" font-size="16" font-weight="700" fill="#27c93f" text-anchor="end" opacity="0">LIVE<animate attributeName="opacity" values="0;0;1" begin="2.3s" dur="0.4s" fill="freeze"/></text>
+  <g mask="url(#mP1d1)"><text x="90" y="166" font-size="15" fill="#c9d1d9">Full-screen, black &amp; white showroom of the builds, brand and story.</text></g>
+  <g mask="url(#mP1d2)"><text x="90" y="190" font-size="15" fill="#8b949e">Everything I ship — documented, live and polished.</text></g>
+
+  <g>
+    <text x="64" y="245" font-size="20" fill="#f700ff" class="pulse">▸</text>
+  </g>
+  <g mask="url(#mP2n)"><text x="90" y="245" font-size="20" font-weight="700" fill="#f7b733">URCAREERBUDDY</text></g>
+  <text x="740" y="245" font-size="16" font-weight="700" fill="#27c93f" text-anchor="end" opacity="0">SHIPPED<animate attributeName="opacity" values="0;0;1" begin="5.5s" dur="0.4s" fill="freeze"/></text>
+  <g mask="url(#mP2d1)"><text x="90" y="276" font-size="15" fill="#c9d1d9">Career guidance platform for students &amp; professionals.</text></g>
+  <g mask="url(#mP2d2)"><text x="90" y="300" font-size="15" fill="#8b949e">Skills assessment, roadmaps, mentorship, AI guidance.</text></g>
+
+  <g>
+    <text x="64" y="355" font-size="20" fill="#f700ff" class="pulse">▸</text>
+  </g>
+  <g mask="url(#mP3n)"><text x="90" y="355" font-size="20" font-weight="700" fill="#f7b733">style-your-looks</text></g>
+  <text x="740" y="355" font-size="16" font-weight="700" fill="#00E5FF" text-anchor="end" opacity="0">IN BUILD<animate attributeName="opacity" values="0;0;1" begin="8.9s" dur="0.4s" fill="freeze"/></text>
+  <g mask="url(#mP3d1)"><text x="90" y="386" font-size="15" fill="#c9d1d9">AI face-analysis + parametric 3D styling mannequin.</text></g>
+  <g mask="url(#mP3d2)"><text x="90" y="410" font-size="15" fill="#8b949e">MediaPipe landmarks + Three.js virtual try-on.</text></g>
+
+  <g mask="url(#mFoot)"><text x="400" y="470" font-size="22" font-weight="700" fill="#f7b733" text-anchor="middle">AUTOMATION OR BUST</text></g>
+  <rect x="490" y="458" width="10" height="22" fill="#f700ff">
+    <animate attributeName="opacity" values="1;0;1" begin="11.9s" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
