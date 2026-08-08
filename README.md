@@ -16,29 +16,66 @@
 
 <br>
 
-## ⚡ Whoami
+## 📟 Mainframe Portrait
 
-```text
-$ whoami
-harshit mishra — builder · engineer · night owl
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/dp-ascii.svg" width="100%" alt="DP decoded in 3D terminal ASCII art" />
+</p>
 
-$ cat skills.txt
-next.js · typescript · three.js · mediapipe · python · docker · cloud · automation
-
-$ uptime
-∞ — currently shipping style-your-looks (a 3D AI styling studio)
-
-$ ./next-move.sh
-SHIP. POLISH. AUTOMATE. REPEAT.
-```
+> _That's my DP, decoded to colored ASCII inside a 3D terminal. It's generated from
+> the actual avatar — if the picture ever changes, ping me and I'll re-render it._
 
 ---
 
-## 🎮 Player HUD
+## 🕹️ Hack Mode
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/game-hud.svg" width="100%" alt="Player HUD widget" />
-</p>
+<details>
+<summary>🖥️ Boot sequence — expand the mainframe log</summary>
+
+<br>
+
+```
+┌───────────────────────────────────────────────┐
+│ WRECKERKNIGHT OS v∞.0 — secure boot           │
+├───────────────────────────────────────────────┤
+│ [ OK ] mounting /dev/life                    │
+│ [ OK ] starting caffeine.service  [coffeeⅣ]  │
+│ [ OK ] loading kernel: the_skillz.c           │
+│ [ OK ] connecting to wifi "404 not found"    │
+│ [ OK ] api key stolen. jk. nice try          │
+│ [FAIL] sleep.service — DEPENDENCY_NOT_MET    │
+│        (requires: none, forever unavailable) │
+│ [ OK ] launching style-your-looks studio     │
+│ [ OK ] profile rendered: 4,096 blocks        │
+│        status ▸ ONLINE · uptime ▸ ∞          │
+└───────────────────────────────────────────────┘
+```
+
+</details>
+
+<br>
+
+```text
+$ ./dev-loop.sh
+>>> pull  → code  → bug  → fix  → push  → repeat
+>>> "it works on my machine" — not today, it's deployed
+>>> coffee() { while [ "$k" -lt "$kaam" ]; do brew; done; }
+```
+
+<br>
+
+<div align="center">
+
+| Weapon | Damage |
+| --- | --- |
+| `Next.js` | 9,000 DMG |
+| `TypeScript` | 8,500 DMG |
+| `Three.js` | 9,999 DMG (crit) |
+| `MediaPipe` | 7,777 DMG |
+| `Docker` | 8,000 DMG |
+| `Coffee` | 10,000 DMG (heals + kills you) |
+
+</div>
 
 ---
 
