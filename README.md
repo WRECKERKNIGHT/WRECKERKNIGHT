@@ -50,8 +50,8 @@
 ## 🎵 Live Now Playing
 
 <p align="center">
-  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31y7htruozzrnh2fraukjakcg4ii&redirect=true">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31y7htruozzrnh2fraukjakcg4ii&cover_image=true&theme=default&show_offline=false&background_color=1099c6&interchange=false&profanity=false&hide_remaster=false&bar_color_cover=true&bar_color=b8c412" alt="Spotify now playing" />
+  <a href="https://github.com/kittinan/spotify-github-profile">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31y7htruozzrnh2fraukjakcg4ii&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false">
   </a>
 </p>
 
