@@ -55,12 +55,13 @@ SHIP. POLISH. AUTOMATE. REPEAT.
 ## 📊 Live Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=WRECKERKNIGHT&show_icons=true&theme=cyberpunk&hide_border=true&count_private=true" width="48%" />
-  <img src="https://streak-stats.demolab.com/?user=WRECKERKNIGHT&theme=cyberpunk&hide_border=true" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=WRECKERKNIGHT&theme=solarized_dark" width="32%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=WRECKERKNIGHT&theme=solarized_dark" width="32%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=WRECKERKNIGHT&theme=solarized_dark" width="32%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WRECKERKNIGHT&layout=compact&theme=cyberpunk&hide_border=true" width="62%" />
+  <img src="https://streak-stats.demolab.com/?user=WRECKERKNIGHT&theme=cyberpunk&hide_border=true" width="62%" />
 </p>
 
 ---
