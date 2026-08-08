@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 380">
+  <defs>
+    <linearGradient id="win" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B1420"/>
+      <stop offset="55%" stop-color="#241A24"/>
+      <stop offset="100%" stop-color="#160F1A"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F7B733"/>
+      <stop offset="45%" stop-color="#D4A373"/>
+      <stop offset="100%" stop-color="#FAEDCD"/>
+    </linearGradient>
+    <linearGradient id="cubeL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3A2A33"/>
+      <stop offset="100%" stop-color="#241A24"/>
+    </linearGradient>
+    <linearGradient id="cubeR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8A5F3D"/>
+      <stop offset="100%" stop-color="#4A342B"/>
+    </linearGradient>
+    <linearGradient id="cubeT" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7B733"/>
+      <stop offset="100%" stop-color="#B98B56"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <pattern id="noise" width="1100" height="380" patternUnits="userSpaceOnUse">
+      <rect width="1100" height="380" fill="url(#scan)">
+        <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite"/>
+      </rect>
+    </pattern>
+  </defs>
+
+  <!-- window -->
+  <rect x="4" y="4" width="1092" height="372" rx="22" fill="url(#win)" stroke="#3d2f45" stroke-width="2"/>
+  <rect x="4" y="4" width="1092" height="372" rx="22" fill="url(#noise)"/>
+
+  <!-- title bar -->
+  <line x1="26" y1="48" x2="1074" y2="48" stroke="#33253c" stroke-width="1"/>
+  <circle cx="44" cy="26" r="7" fill="#FF5F56"/>
+  <circle cx="68" cy="26" r="7" fill="#FFBD2E"/>
+  <circle cx="92" cy="26" r="7" fill="#27C93F"/>
+  <text x="170" y="32" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="15" fill="#8d7b94">wreckerknight@github: ~/profile</text>
+  <text x="1010" y="32" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#F700FF">
+    <tspan>[zsh]</tspan>
+    <animate attributeName="opacity" values="1;0.2;1" dur="2.4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- isometric cube -->
+  <g>
+    <polygon points="210,110 132,146 210,182 288,146" fill="url(#cubeT)" stroke="#F7B733" stroke-width="1.5" opacity="0.95"/>
+    <polygon points="132,146 210,182 210,272 132,236" fill="url(#cubeL)" stroke="#3d2f45" stroke-width="1.5"/>
+    <polygon points="288,146 210,182 210,272 288,236" fill="url(#cubeR)" stroke="#8A5F3D" stroke-width="1.5">
+      <animate attributeName="fill-opacity" values="1;0.55;1" dur="4s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="210" y="244" font-family="ui-monospace,Menlo,monospace" font-size="30" font-weight="700" fill="#FAEDCD" text-anchor="middle">WK</text>
+  </g>
+
+  <!-- orbit particles -->
+  <g>
+    <circle r="5" fill="#F700FF">
+      <animateMotion dur="7s" repeatCount="indefinite" path="M210,182 A120,74 0 1 1 209,182 A120,74 0 1 1 210,182"/>
+    </circle>
+    <circle r="4" fill="#00E5FF">
+      <animateMotion dur="5s" begin="1s" repeatCount="indefinite" path="M210,182 A120,74 0 1 0 209,182 A120,74 0 1 0 210,182"/>
+    </circle>
+    <circle r="3" fill="#F7B733">
+      <animateMotion dur="4.2s" begin="0.5s" repeatCount="indefinite" path="M210,182 A90,56 0 1 1 209,182 A90,56 0 1 1 210,182"/>
+    </circle>
+  </g>
+
+  <!-- main wordmark -->
+  <g filter="url(#glow)">
+    <text x="360" y="152" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="76" font-weight="900" letter-spacing="2" fill="url(#title)" filter="url(#soft)">
+      WRECKERKNIGHT
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <text x="362" y="152" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="76" font-weight="900" letter-spacing="2" fill="url(#title)">WRECKERKNIGHT</text>
+
+  <!-- typed lines -->
+  <text x="364" y="212" font-family="ui-monospace,Menlo,monospace" font-size="24" fill="#00E5FF" opacity="0">
+    <tspan>$ ./boot --profile --energy=overdrive</tspan>
+    <animate attributeName="opacity" values="0;0;1" begin="0.2s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text x="364" y="252" font-family="ui-monospace,Menlo,monospace" font-size="24" fill="#27C93F" opacity="0">
+    <tspan>▸ status  : ONLINE</tspan>
+    <animate attributeName="opacity" values="0;0;1" begin="1.4s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text x="364" y="292" font-family="ui-monospace,Menlo,monospace" font-size="24" fill="#F7B733" opacity="0">
+    <tspan>▸ role    : FULL-STACK × AI × 3D</tspan>
+    <animate attributeName="opacity" values="0;0;1" begin="2.6s" dur="0.3s" fill="freeze"/>
+  </text>
+  <text x="364" y="332" font-family="ui-monospace,Menlo,monospace" font-size="24" fill="#F700FF" opacity="0">
+    <tspan>▸ uptime  : ∞ · night-owl 23:00–03:00</tspan>
+    <animate attributeName="opacity" values="0;0;1" begin="3.8s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <!-- blinking cursor -->
+  <rect x="930" y="312" width="14" height="26" fill="#F700FF" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0;1;1;0;0;0" begin="3.8s" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- status bar -->
+  <rect x="4" y="346" width="1092" height="30" rx="14" fill="#120d16"/>
+  <text x="30" y="366" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#8d7b94">▲ 100%</text>
+  <text x="180" y="366" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#8d7b94">shell: zsh</text>
+  <text x="330" y="366" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#8d7b94">ram: 99%</text>
+  <text x="480" y="366" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#8d7b94">coffee: IV</text>
+  <text x="660" y="366" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#27C93F">● build pipeline: green</text>
+  <text x="920" y="366" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#F700FF">[insert: 200 OK]</text>
+</svg>
