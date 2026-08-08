@@ -1,10 +1,10 @@
 <div align="center">
 
 <a href="https://github.com/WRECKERKNIGHT">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=18,20,30&height=230&section=header&text=WRECKERKNIGHT&fontSize=70&fontColor=fff&animation=twinkling" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=18,20,30&height=230&section=header&text=HARSHIT+MISHRA&fontSize=70&fontColor=fff&animation=twinkling" width="100%" />
 </a>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=900&color=F700FF&center=true&vCenter=true&width=720&lines=WRECKERKNIGHT;FULL-STACK+x+AI+x+3D;AUTOMATION+OR+BUST;NIGHT+OWL+23%3A00-03%3A00;THE+SKY+IS+NOT+THE+LIMIT" alt="Typing animation" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=900&color=F700FF&center=true&vCenter=true&width=720&lines=WRECKERKNIGHT;FULL-STACK+x+AI+x+3D;AUTOMATION+OR+BUST;NIGHT+OWL+18%3A00-03%3A00;THE+SKY+IS+NOT+THE+LIMIT" alt="Typing animation" />
 
 </div>
 
@@ -19,11 +19,11 @@
 ## 📟 Mainframe Portrait
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/dp-ascii.svg" width="100%" alt="DP decoded in 3D terminal ASCII art" />
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/dp-ascii.svg" width="100%" alt="Full-screen black and white ASCII DP portrait" />
 </p>
 
-> _That's my DP rebuilt from text characters inside a 3D terminal. It's generated from
-> the actual avatar — if the picture ever changes, ping me and I'll re-render it._
+> _That's my DP rendered as a full-screen black & white ASCII portrait — no frame, no colors,
+> just the avatar. If the picture ever changes, ping me and I'll re-render it._
 
 ---
 
@@ -74,7 +74,7 @@
 ## 🌙 Night Owl Mode
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/active-hours.svg" width="72%" alt="Most active 11PM - 3AM" />
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/active-hours.svg" width="72%" alt="Most active 6PM - 3AM" />
 </p>
 
 <p align="center">
@@ -83,21 +83,17 @@
 
 ---
 
-## 🌆 3D Contribution City
+## 🚀 Project Overview
 
-_Generated every 24h by a GitHub Action — the skyline grows as you commit._
+_Flagship work, live and shipped._
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution skyline" />
-</p>
+### 🌐 Personal Portfolio — [wreckerknight.netlify.app](https://wreckerknight.netlify.app)
 
----
+My personal portfolio website — a full-screen, black & white showroom of the builds, the brand and the story behind WRECKERKNIGHT. Everything I ship, documented and live.
 
-## 🐍 Contribution Snake
+### 🎓 URCAREERBUDDY — [github.com/WRECKERKNIGHT/URCAREERBUDDY](https://github.com/WRECKERKNIGHT/URCAREERBUDDY)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/output/dist/github-snake-dark.svg" width="100%" alt="Contribution snake" />
-</p>
+A career guidance platform that helps students and professionals find their next move — skills assessment, personalized roadmaps and mentorship, all in one place.
 
 ---
 
@@ -136,7 +132,7 @@ _Generated every 24h by a GitHub Action — the skyline grows as you commit._
 
 | Platform | Handle |
 | --- | --- |
-| 🌐 Portfolio | [wreckerknight.dev](https://helpful-medovik-d996bb.netlify.app) |
+| 🌐 Portfolio | [wreckerknight.netlify.app](https://wreckerknight.netlify.app) |
 | 💼 LinkedIn | [linkedin.com/in/wreckerknight](https://www.linkedin.com/) |
 | 🐦 Twitter / X | [@wreckerknight](https://twitter.com/) |
 | 📧 Email | [contact@wreckerknight.dev](mailto:contact@wreckerknight.dev) |

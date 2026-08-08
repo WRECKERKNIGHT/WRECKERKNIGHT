@@ -102,7 +102,7 @@
     <animate attributeName="opacity" values="0;0;1" begin="2.6s" dur="0.3s" fill="freeze"/>
   </text>
   <text x="364" y="332" font-family="ui-monospace,Menlo,monospace" font-size="24" fill="#F700FF" opacity="0">
-    <tspan>▸ uptime  : ∞ · night-owl 23:00–03:00</tspan>
+    <tspan>▸ uptime  : ∞ · night-owl 18:00–03:00</tspan>
     <animate attributeName="opacity" values="0;0;1" begin="3.8s" dur="0.3s" fill="freeze"/>
   </text>
 
