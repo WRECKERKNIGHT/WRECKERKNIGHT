@@ -4,6 +4,12 @@ The "Now Playing" widget in the profile README is powered by
 [spotify-github-profile](https://spotify-github-profile.vercel.app).
 It needs **your Spotify username** to render your current listening activity.
 
+## Status
+
+This profile is already configured with the public uid `31y7htruozzrnh2fraukjakcg4ii`
+(the widget renders at `spotify-github-profile.kittinanx.com`). If the widget ever
+breaks or you want to change the look, follow the steps below.
+
 ## Steps
 
 1. Open https://spotify-github-profile.vercel.app
@@ -15,17 +21,17 @@ It needs **your Spotify username** to render your current listening activity.
 
 ## Update the README
 
-Edit `README.md` and replace **both** occurrences of `YOUR_SPOTIFY_UID`
-(the `<a href>` and the `<img src>` inside the "Now Playing" section) with
-your username.
+The "Now Playing" section in `README.md` already uses this URL (uid filled in):
 
 ```
-https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=novatide&bar_color=53b14f&bar_color_cover=true
+https://spotify-github-profile.kittinanx.com/api/view?uid=31y7htruozzrnh2fraukjakcg4ii&cover_image=true&theme=default&show_offline=false&background_color=1099c6&interchange=false&profanity=false&hide_remaster=false&bar_color_cover=true&bar_color=b8c412
 ```
 
 - `cover_image=true` — show the album art of the current track.
-- `theme=novatide` — dark neon theme that matches this profile.
-- `bar_color=53b14f` — green progress bar; change the hex to any colour you like.
+- `background_color=1099c6` — widget background (sky blue); change the hex to any colour.
+- `bar_color=b8c412` — progress bar colour (chartreuse); change the hex to any colour you like.
+- `theme=default` — card layout; options include `novatide`, `cyberpunk`, `dark`.
+- `redirect=true` (in the link) — clicking the widget opens the track on Spotify.
 
 ## Notes
 

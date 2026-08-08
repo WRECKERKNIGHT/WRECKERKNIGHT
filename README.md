@@ -44,17 +44,9 @@ SHIP. POLISH. AUTOMATE. REPEAT.
 
 ## 🎵 Live Now Playing
 
-<!--
-  Spotify live widget — replace YOUR_SPOTIFY_UID with your Spotify username:
-  1. Go to https://spotify-github-profile.vercel.app
-  2. Connect your Spotify account to get your personalised URL / uid
-  3. Paste your uid in BOTH places below (the <img src> is the widget)
-  Full steps: https://github.com/WRECKERKNIGHT/WRECKERKNIGHT/blob/main/SPOTIFY-SETUP.md
--->
-
 <p align="center">
-  <a href="https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=novatide&bar_color=53b14f&bar_color_cover=true">
-    <img src="https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=novatide&bar_color=53b14f&bar_color_cover=true" alt="Spotify now playing" />
+  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31y7htruozzrnh2fraukjakcg4ii&redirect=true">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31y7htruozzrnh2fraukjakcg4ii&cover_image=true&theme=default&show_offline=false&background_color=1099c6&interchange=false&profanity=false&hide_remaster=false&bar_color_cover=true&bar_color=b8c412" alt="Spotify now playing" />
   </a>
 </p>
 
