@@ -155,9 +155,10 @@ The flagship I'm actively building — an AI face-analysis studio with a paramet
 | Platform | Handle |
 | --- | --- |
 | 🌐 Portfolio | [wreckerknight.netlify.app](https://wreckerknight.netlify.app) |
-| 💼 LinkedIn | [linkedin.com/in/wreckerknight](https://www.linkedin.com/) |
+| 💼 LinkedIn | [linkedin.com/in/harshit-mishra-58b00b2ab](https://www.linkedin.com/in/harshit-mishra-58b00b2ab/) |
 | 🐦 Twitter / X | [@wreckerknight](https://twitter.com/) |
-| 📧 Email | [contact@wreckerknight.dev](mailto:contact@wreckerknight.dev) |
+| 📧 Email | [harshithardik312@gmail.com](mailto:harshithardik312@gmail.com) |
+| 📞 Phone | [+91 9431831261](tel:+919431831261) |
 
 **Ship it, then polish it, then automate it.**
 
