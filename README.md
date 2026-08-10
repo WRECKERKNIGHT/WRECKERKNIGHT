@@ -79,22 +79,21 @@
 
 ---
 
-## 🏆 Loot Table
+## 🎡 Flagship Rotation
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=WRECKERKNIGHT&theme=darkhub&no-frame=true&no-bg=true&margin-w=12&column=8" alt="GitHub trophies" />
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/projects-marquee.svg" width="100%" alt="Rotating showcase of flagship projects" />
 </p>
-
----
-
-## 🐍 Commit Eater
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/output/snake-dark.svg" width="100%" alt="Snake eating my contribution graph" />
+  <a href="https://github.com/WRECKERKNIGHT/style-your-looks"><img src="https://img.shields.io/badge/style--your--looks-3D+AI+try--on-F700FF?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/WRECKERKNIGHT/URCAREERBUDDY"><img src="https://img.shields.io/badge/URCAREERBUDDY-career+AI-00E5FF?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://wreckerknight.netlify.app"><img src="https://img.shields.io/badge/portfolio-showroom-F7B733?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/WRECKERKNIGHT/jenny-ai-assistant"><img src="https://img.shields.io/badge/jenny--ai--assistant-chatbot-27C93F?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/WRECKERKNIGHT/EXPENSETRACKER"><img src="https://img.shields.io/badge/EXPENSETRACKER-finance-8A5F3D?style=for-the-badge&logo=github&logoColor=white" /></a>
 </p>
 
-> _A snake runs on GitHub Actions, swallows my entire contribution graph, and re-renders it every few hours.
-> It has never missed a meal._
+> _The rotation cycles through the builds — each card is a live link. Hover is optional; shipping isn't._
 
 ---
 
@@ -171,6 +170,6 @@ The flagship I'm actively building — an AI face-analysis studio with a paramet
 <details>
 <summary>🗄️ System.log — extended activity</summary>
 
-Repos on this account are maintained with automated CI (lint + typecheck + build), GitHub Actions, and GitHub Pages where applicable — this profile included. The snake renders my contribution graph on a schedule, and everything else above updates itself while I sleep.
+Repos on this account are maintained with automated CI (lint + typecheck + build), GitHub Actions, and GitHub Pages where applicable — this profile included. Everything else above updates itself while I sleep.
 
 </details>
