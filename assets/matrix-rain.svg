@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 220">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#04030a"/>
+      <stop offset="100%" stop-color="#0E0A12"/>
+    </linearGradient>
+    <linearGradient id="mtitle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F7B733"/>
+      <stop offset="100%" stop-color="#FAEDCD"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowBig" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="5" y="5" width="1090" height="210" rx="26" fill="url(#mbg)" stroke="#2b2033" stroke-width="2"/>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="5.6s" begin="2.2s" repeatCount="indefinite"/>
+    <text x="19" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">ヤ</text>
+    <text x="19" y="18" fill="#F7B733" opacity="0.56" font-family="ui-monospace,Menlo,monospace" font-size="16">ナ</text>
+    <text x="19" y="36" fill="#00E5FF" opacity="0.64" font-family="ui-monospace,Menlo,monospace" font-size="16">エ</text>
+    <text x="19" y="54" fill="#00E5FF" opacity="0.38" font-family="ui-monospace,Menlo,monospace" font-size="16">8</text>
+    <text x="19" y="72" fill="#F7B733" opacity="0.27" font-family="ui-monospace,Menlo,monospace" font-size="16">サ</text>
+    <text x="19" y="90" fill="#00E5FF" opacity="0.16" font-family="ui-monospace,Menlo,monospace" font-size="16">9</text>
+    <text x="19" y="108" fill="#F7B733" opacity="0.51" font-family="ui-monospace,Menlo,monospace" font-size="16">ウ</text>
+    <text x="19" y="126" fill="#F7B733" opacity="0.27" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="19" y="144" fill="#00E5FF" opacity="0.6" font-family="ui-monospace,Menlo,monospace" font-size="16">ラ</text>
+    <text x="19" y="162" fill="#F7B733" opacity="0.59" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="19" y="180" fill="#00E5FF" opacity="0.34" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="19" y="198" fill="#27C93F" opacity="0.68" font-family="ui-monospace,Menlo,monospace" font-size="16">マ</text>
+    <text x="19" y="216" fill="#00E5FF" opacity="0.2" font-family="ui-monospace,Menlo,monospace" font-size="16">タ</text>
+    <text x="19" y="234" fill="#F7B733" opacity="0.62" font-family="ui-monospace,Menlo,monospace" font-size="16">1</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="8.7s" begin="5.8s" repeatCount="indefinite"/>
+    <text x="102" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">7</text>
+    <text x="102" y="18" fill="#27C93F" opacity="0.69" font-family="ui-monospace,Menlo,monospace" font-size="16">タ</text>
+    <text x="102" y="36" fill="#F7B733" opacity="0.45" font-family="ui-monospace,Menlo,monospace" font-size="16">サ</text>
+    <text x="102" y="54" fill="#27C93F" opacity="0.64" font-family="ui-monospace,Menlo,monospace" font-size="16">9</text>
+    <text x="102" y="72" fill="#00E5FF" opacity="0.26" font-family="ui-monospace,Menlo,monospace" font-size="16">8</text>
+    <text x="102" y="90" fill="#27C93F" opacity="0.51" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+    <text x="102" y="108" fill="#00E5FF" opacity="0.62" font-family="ui-monospace,Menlo,monospace" font-size="16">サ</text>
+    <text x="102" y="126" fill="#F7B733" opacity="0.3" font-family="ui-monospace,Menlo,monospace" font-size="16">2</text>
+    <text x="102" y="144" fill="#27C93F" opacity="0.24" font-family="ui-monospace,Menlo,monospace" font-size="16">1</text>
+    <text x="102" y="162" fill="#F7B733" opacity="0.52" font-family="ui-monospace,Menlo,monospace" font-size="16">マ</text>
+    <text x="102" y="180" fill="#F7B733" opacity="0.51" font-family="ui-monospace,Menlo,monospace" font-size="16">イ</text>
+    <text x="102" y="198" fill="#F7B733" opacity="0.24" font-family="ui-monospace,Menlo,monospace" font-size="16">ア</text>
+    <text x="102" y="216" fill="#27C93F" opacity="0.24" font-family="ui-monospace,Menlo,monospace" font-size="16">ヤ</text>
+    <text x="102" y="234" fill="#F7B733" opacity="0.69" font-family="ui-monospace,Menlo,monospace" font-size="16">ラ</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="8.2s" begin="6.7s" repeatCount="indefinite"/>
+    <text x="179" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">オ</text>
+    <text x="179" y="18" fill="#00E5FF" opacity="0.28" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+    <text x="179" y="36" fill="#00E5FF" opacity="0.37" font-family="ui-monospace,Menlo,monospace" font-size="16">0</text>
+    <text x="179" y="54" fill="#F7B733" opacity="0.65" font-family="ui-monospace,Menlo,monospace" font-size="16">マ</text>
+    <text x="179" y="72" fill="#F7B733" opacity="0.32" font-family="ui-monospace,Menlo,monospace" font-size="16">ウ</text>
+    <text x="179" y="90" fill="#F7B733" opacity="0.37" font-family="ui-monospace,Menlo,monospace" font-size="16">5</text>
+    <text x="179" y="108" fill="#00E5FF" opacity="0.23" font-family="ui-monospace,Menlo,monospace" font-size="16">4</text>
+    <text x="179" y="126" fill="#F7B733" opacity="0.56" font-family="ui-monospace,Menlo,monospace" font-size="16">ヤ</text>
+    <text x="179" y="144" fill="#27C93F" opacity="0.56" font-family="ui-monospace,Menlo,monospace" font-size="16">ラ</text>
+    <text x="179" y="162" fill="#00E5FF" opacity="0.37" font-family="ui-monospace,Menlo,monospace" font-size="16">8</text>
+    <text x="179" y="180" fill="#00E5FF" opacity="0.43" font-family="ui-monospace,Menlo,monospace" font-size="16">ナ</text>
+    <text x="179" y="198" fill="#00E5FF" opacity="0.18" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="179" y="216" fill="#F7B733" opacity="0.5" font-family="ui-monospace,Menlo,monospace" font-size="16">ナ</text>
+    <text x="179" y="234" fill="#27C93F" opacity="0.48" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="7.9s" begin="3.7s" repeatCount="indefinite"/>
+    <text x="262" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">ラ</text>
+    <text x="262" y="18" fill="#00E5FF" opacity="0.62" font-family="ui-monospace,Menlo,monospace" font-size="16">7</text>
+    <text x="262" y="36" fill="#F7B733" opacity="0.55" font-family="ui-monospace,Menlo,monospace" font-size="16">イ</text>
+    <text x="262" y="54" fill="#F7B733" opacity="0.56" font-family="ui-monospace,Menlo,monospace" font-size="16">7</text>
+    <text x="262" y="72" fill="#27C93F" opacity="0.21" font-family="ui-monospace,Menlo,monospace" font-size="16">0</text>
+    <text x="262" y="90" fill="#F7B733" opacity="0.4" font-family="ui-monospace,Menlo,monospace" font-size="16">ハ</text>
+    <text x="262" y="108" fill="#F7B733" opacity="0.29" font-family="ui-monospace,Menlo,monospace" font-size="16">エ</text>
+    <text x="262" y="126" fill="#00E5FF" opacity="0.25" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="262" y="144" fill="#F7B733" opacity="0.31" font-family="ui-monospace,Menlo,monospace" font-size="16">ア</text>
+    <text x="262" y="162" fill="#00E5FF" opacity="0.48" font-family="ui-monospace,Menlo,monospace" font-size="16">6</text>
+    <text x="262" y="180" fill="#F7B733" opacity="0.57" font-family="ui-monospace,Menlo,monospace" font-size="16">1</text>
+    <text x="262" y="198" fill="#00E5FF" opacity="0.66" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="262" y="216" fill="#00E5FF" opacity="0.33" font-family="ui-monospace,Menlo,monospace" font-size="16">9</text>
+    <text x="262" y="234" fill="#27C93F" opacity="0.66" font-family="ui-monospace,Menlo,monospace" font-size="16">タ</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="5.7s" begin="7.0s" repeatCount="indefinite"/>
+    <text x="335" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">サ</text>
+    <text x="335" y="18" fill="#00E5FF" opacity="0.55" font-family="ui-monospace,Menlo,monospace" font-size="16">サ</text>
+    <text x="335" y="36" fill="#00E5FF" opacity="0.44" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="335" y="54" fill="#F7B733" opacity="0.51" font-family="ui-monospace,Menlo,monospace" font-size="16">ナ</text>
+    <text x="335" y="72" fill="#F7B733" opacity="0.3" font-family="ui-monospace,Menlo,monospace" font-size="16">ハ</text>
+    <text x="335" y="90" fill="#F7B733" opacity="0.68" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="335" y="108" fill="#00E5FF" opacity="0.55" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="335" y="126" fill="#F7B733" opacity="0.32" font-family="ui-monospace,Menlo,monospace" font-size="16">ウ</text>
+    <text x="335" y="144" fill="#F7B733" opacity="0.36" font-family="ui-monospace,Menlo,monospace" font-size="16">ア</text>
+    <text x="335" y="162" fill="#00E5FF" opacity="0.22" font-family="ui-monospace,Menlo,monospace" font-size="16">4</text>
+    <text x="335" y="180" fill="#F7B733" opacity="0.34" font-family="ui-monospace,Menlo,monospace" font-size="16">サ</text>
+    <text x="335" y="198" fill="#00E5FF" opacity="0.28" font-family="ui-monospace,Menlo,monospace" font-size="16">7</text>
+    <text x="335" y="216" fill="#F7B733" opacity="0.19" font-family="ui-monospace,Menlo,monospace" font-size="16">ア</text>
+    <text x="335" y="234" fill="#00E5FF" opacity="0.28" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="5.8s" begin="1.9s" repeatCount="indefinite"/>
+    <text x="416" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">イ</text>
+    <text x="416" y="18" fill="#00E5FF" opacity="0.27" font-family="ui-monospace,Menlo,monospace" font-size="16">5</text>
+    <text x="416" y="36" fill="#F7B733" opacity="0.66" font-family="ui-monospace,Menlo,monospace" font-size="16">エ</text>
+    <text x="416" y="54" fill="#27C93F" opacity="0.41" font-family="ui-monospace,Menlo,monospace" font-size="16">8</text>
+    <text x="416" y="72" fill="#00E5FF" opacity="0.25" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="416" y="90" fill="#27C93F" opacity="0.39" font-family="ui-monospace,Menlo,monospace" font-size="16">イ</text>
+    <text x="416" y="108" fill="#F7B733" opacity="0.41" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="416" y="126" fill="#F7B733" opacity="0.52" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+    <text x="416" y="144" fill="#F7B733" opacity="0.18" font-family="ui-monospace,Menlo,monospace" font-size="16">タ</text>
+    <text x="416" y="162" fill="#00E5FF" opacity="0.59" font-family="ui-monospace,Menlo,monospace" font-size="16">0</text>
+    <text x="416" y="180" fill="#F7B733" opacity="0.26" font-family="ui-monospace,Menlo,monospace" font-size="16">ヤ</text>
+    <text x="416" y="198" fill="#00E5FF" opacity="0.23" font-family="ui-monospace,Menlo,monospace" font-size="16">4</text>
+    <text x="416" y="216" fill="#00E5FF" opacity="0.4" font-family="ui-monospace,Menlo,monospace" font-size="16">ラ</text>
+    <text x="416" y="234" fill="#F7B733" opacity="0.59" font-family="ui-monospace,Menlo,monospace" font-size="16">4</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="5.7s" begin="8.0s" repeatCount="indefinite"/>
+    <text x="487" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">ア</text>
+    <text x="487" y="18" fill="#00E5FF" opacity="0.66" font-family="ui-monospace,Menlo,monospace" font-size="16">サ</text>
+    <text x="487" y="36" fill="#27C93F" opacity="0.37" font-family="ui-monospace,Menlo,monospace" font-size="16">ハ</text>
+    <text x="487" y="54" fill="#00E5FF" opacity="0.63" font-family="ui-monospace,Menlo,monospace" font-size="16">マ</text>
+    <text x="487" y="72" fill="#27C93F" opacity="0.36" font-family="ui-monospace,Menlo,monospace" font-size="16">ハ</text>
+    <text x="487" y="90" fill="#27C93F" opacity="0.66" font-family="ui-monospace,Menlo,monospace" font-size="16">ラ</text>
+    <text x="487" y="108" fill="#F7B733" opacity="0.38" font-family="ui-monospace,Menlo,monospace" font-size="16">ワ</text>
+    <text x="487" y="126" fill="#27C93F" opacity="0.51" font-family="ui-monospace,Menlo,monospace" font-size="16">7</text>
+    <text x="487" y="144" fill="#00E5FF" opacity="0.25" font-family="ui-monospace,Menlo,monospace" font-size="16">ナ</text>
+    <text x="487" y="162" fill="#F7B733" opacity="0.47" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+    <text x="487" y="180" fill="#00E5FF" opacity="0.56" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+    <text x="487" y="198" fill="#F7B733" opacity="0.47" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+    <text x="487" y="216" fill="#F7B733" opacity="0.24" font-family="ui-monospace,Menlo,monospace" font-size="16">6</text>
+    <text x="487" y="234" fill="#00E5FF" opacity="0.62" font-family="ui-monospace,Menlo,monospace" font-size="16">サ</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="8.2s" begin="1.9s" repeatCount="indefinite"/>
+    <text x="564" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">タ</text>
+    <text x="564" y="18" fill="#F7B733" opacity="0.29" font-family="ui-monospace,Menlo,monospace" font-size="16">8</text>
+    <text x="564" y="36" fill="#27C93F" opacity="0.49" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+    <text x="564" y="54" fill="#F7B733" opacity="0.47" font-family="ui-monospace,Menlo,monospace" font-size="16">イ</text>
+    <text x="564" y="72" fill="#00E5FF" opacity="0.66" font-family="ui-monospace,Menlo,monospace" font-size="16">0</text>
+    <text x="564" y="90" fill="#00E5FF" opacity="0.54" font-family="ui-monospace,Menlo,monospace" font-size="16">イ</text>
+    <text x="564" y="108" fill="#F7B733" opacity="0.37" font-family="ui-monospace,Menlo,monospace" font-size="16">ラ</text>
+    <text x="564" y="126" fill="#27C93F" opacity="0.31" font-family="ui-monospace,Menlo,monospace" font-size="16">ア</text>
+    <text x="564" y="144" fill="#00E5FF" opacity="0.66" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="564" y="162" fill="#F7B733" opacity="0.49" font-family="ui-monospace,Menlo,monospace" font-size="16">4</text>
+    <text x="564" y="180" fill="#00E5FF" opacity="0.19" font-family="ui-monospace,Menlo,monospace" font-size="16">タ</text>
+    <text x="564" y="198" fill="#27C93F" opacity="0.3" font-family="ui-monospace,Menlo,monospace" font-size="16">6</text>
+    <text x="564" y="216" fill="#27C93F" opacity="0.63" font-family="ui-monospace,Menlo,monospace" font-size="16">サ</text>
+    <text x="564" y="234" fill="#F7B733" opacity="0.24" font-family="ui-monospace,Menlo,monospace" font-size="16">ワ</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="7.9s" begin="7.9s" repeatCount="indefinite"/>
+    <text x="649" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">ア</text>
+    <text x="649" y="18" fill="#F7B733" opacity="0.15" font-family="ui-monospace,Menlo,monospace" font-size="16">6</text>
+    <text x="649" y="36" fill="#00E5FF" opacity="0.66" font-family="ui-monospace,Menlo,monospace" font-size="16">ワ</text>
+    <text x="649" y="54" fill="#00E5FF" opacity="0.3" font-family="ui-monospace,Menlo,monospace" font-size="16">ナ</text>
+    <text x="649" y="72" fill="#27C93F" opacity="0.45" font-family="ui-monospace,Menlo,monospace" font-size="16">エ</text>
+    <text x="649" y="90" fill="#F7B733" opacity="0.48" font-family="ui-monospace,Menlo,monospace" font-size="16">ワ</text>
+    <text x="649" y="108" fill="#F7B733" opacity="0.26" font-family="ui-monospace,Menlo,monospace" font-size="16">0</text>
+    <text x="649" y="126" fill="#27C93F" opacity="0.43" font-family="ui-monospace,Menlo,monospace" font-size="16">ラ</text>
+    <text x="649" y="144" fill="#27C93F" opacity="0.2" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+    <text x="649" y="162" fill="#27C93F" opacity="0.17" font-family="ui-monospace,Menlo,monospace" font-size="16">ラ</text>
+    <text x="649" y="180" fill="#27C93F" opacity="0.22" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="649" y="198" fill="#F7B733" opacity="0.56" font-family="ui-monospace,Menlo,monospace" font-size="16">ハ</text>
+    <text x="649" y="216" fill="#00E5FF" opacity="0.39" font-family="ui-monospace,Menlo,monospace" font-size="16">ウ</text>
+    <text x="649" y="234" fill="#F7B733" opacity="0.19" font-family="ui-monospace,Menlo,monospace" font-size="16">タ</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="7.7s" begin="6.7s" repeatCount="indefinite"/>
+    <text x="722" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">8</text>
+    <text x="722" y="18" fill="#00E5FF" opacity="0.23" font-family="ui-monospace,Menlo,monospace" font-size="16">7</text>
+    <text x="722" y="36" fill="#00E5FF" opacity="0.32" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+    <text x="722" y="54" fill="#00E5FF" opacity="0.27" font-family="ui-monospace,Menlo,monospace" font-size="16">1</text>
+    <text x="722" y="72" fill="#F7B733" opacity="0.21" font-family="ui-monospace,Menlo,monospace" font-size="16">イ</text>
+    <text x="722" y="90" fill="#F7B733" opacity="0.69" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="722" y="108" fill="#00E5FF" opacity="0.66" font-family="ui-monospace,Menlo,monospace" font-size="16">ナ</text>
+    <text x="722" y="126" fill="#00E5FF" opacity="0.69" font-family="ui-monospace,Menlo,monospace" font-size="16">ハ</text>
+    <text x="722" y="144" fill="#F7B733" opacity="0.16" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="722" y="162" fill="#27C93F" opacity="0.58" font-family="ui-monospace,Menlo,monospace" font-size="16">0</text>
+    <text x="722" y="180" fill="#00E5FF" opacity="0.63" font-family="ui-monospace,Menlo,monospace" font-size="16">イ</text>
+    <text x="722" y="198" fill="#F7B733" opacity="0.24" font-family="ui-monospace,Menlo,monospace" font-size="16">ラ</text>
+    <text x="722" y="216" fill="#00E5FF" opacity="0.36" font-family="ui-monospace,Menlo,monospace" font-size="16">タ</text>
+    <text x="722" y="234" fill="#27C93F" opacity="0.27" font-family="ui-monospace,Menlo,monospace" font-size="16">5</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="6.7s" begin="6.4s" repeatCount="indefinite"/>
+    <text x="807" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">ヤ</text>
+    <text x="807" y="18" fill="#00E5FF" opacity="0.16" font-family="ui-monospace,Menlo,monospace" font-size="16">ヤ</text>
+    <text x="807" y="36" fill="#00E5FF" opacity="0.33" font-family="ui-monospace,Menlo,monospace" font-size="16">2</text>
+    <text x="807" y="54" fill="#F7B733" opacity="0.3" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="807" y="72" fill="#F7B733" opacity="0.37" font-family="ui-monospace,Menlo,monospace" font-size="16">6</text>
+    <text x="807" y="90" fill="#00E5FF" opacity="0.67" font-family="ui-monospace,Menlo,monospace" font-size="16">0</text>
+    <text x="807" y="108" fill="#27C93F" opacity="0.25" font-family="ui-monospace,Menlo,monospace" font-size="16">ラ</text>
+    <text x="807" y="126" fill="#27C93F" opacity="0.21" font-family="ui-monospace,Menlo,monospace" font-size="16">カ</text>
+    <text x="807" y="144" fill="#27C93F" opacity="0.55" font-family="ui-monospace,Menlo,monospace" font-size="16">1</text>
+    <text x="807" y="162" fill="#F7B733" opacity="0.48" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="807" y="180" fill="#F7B733" opacity="0.36" font-family="ui-monospace,Menlo,monospace" font-size="16">タ</text>
+    <text x="807" y="198" fill="#F7B733" opacity="0.29" font-family="ui-monospace,Menlo,monospace" font-size="16">マ</text>
+    <text x="807" y="216" fill="#F7B733" opacity="0.15" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="807" y="234" fill="#F7B733" opacity="0.55" font-family="ui-monospace,Menlo,monospace" font-size="16">イ</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="7.0s" begin="0.6s" repeatCount="indefinite"/>
+    <text x="880" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">イ</text>
+    <text x="880" y="18" fill="#F7B733" opacity="0.49" font-family="ui-monospace,Menlo,monospace" font-size="16">0</text>
+    <text x="880" y="36" fill="#27C93F" opacity="0.55" font-family="ui-monospace,Menlo,monospace" font-size="16">タ</text>
+    <text x="880" y="54" fill="#27C93F" opacity="0.32" font-family="ui-monospace,Menlo,monospace" font-size="16">6</text>
+    <text x="880" y="72" fill="#27C93F" opacity="0.37" font-family="ui-monospace,Menlo,monospace" font-size="16">0</text>
+    <text x="880" y="90" fill="#27C93F" opacity="0.22" font-family="ui-monospace,Menlo,monospace" font-size="16">7</text>
+    <text x="880" y="108" fill="#F7B733" opacity="0.67" font-family="ui-monospace,Menlo,monospace" font-size="16">イ</text>
+    <text x="880" y="126" fill="#F7B733" opacity="0.65" font-family="ui-monospace,Menlo,monospace" font-size="16">エ</text>
+    <text x="880" y="144" fill="#F7B733" opacity="0.32" font-family="ui-monospace,Menlo,monospace" font-size="16">8</text>
+    <text x="880" y="162" fill="#00E5FF" opacity="0.32" font-family="ui-monospace,Menlo,monospace" font-size="16">ア</text>
+    <text x="880" y="180" fill="#F7B733" opacity="0.58" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="880" y="198" fill="#27C93F" opacity="0.33" font-family="ui-monospace,Menlo,monospace" font-size="16">ア</text>
+    <text x="880" y="216" fill="#F7B733" opacity="0.52" font-family="ui-monospace,Menlo,monospace" font-size="16">4</text>
+    <text x="880" y="234" fill="#F7B733" opacity="0.59" font-family="ui-monospace,Menlo,monospace" font-size="16">5</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="8.1s" begin="2.3s" repeatCount="indefinite"/>
+    <text x="957" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">イ</text>
+    <text x="957" y="18" fill="#00E5FF" opacity="0.49" font-family="ui-monospace,Menlo,monospace" font-size="16">ア</text>
+    <text x="957" y="36" fill="#27C93F" opacity="0.28" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="957" y="54" fill="#00E5FF" opacity="0.59" font-family="ui-monospace,Menlo,monospace" font-size="16">ヤ</text>
+    <text x="957" y="72" fill="#27C93F" opacity="0.18" font-family="ui-monospace,Menlo,monospace" font-size="16">ア</text>
+    <text x="957" y="90" fill="#00E5FF" opacity="0.62" font-family="ui-monospace,Menlo,monospace" font-size="16">9</text>
+    <text x="957" y="108" fill="#F7B733" opacity="0.38" font-family="ui-monospace,Menlo,monospace" font-size="16">4</text>
+    <text x="957" y="126" fill="#F7B733" opacity="0.26" font-family="ui-monospace,Menlo,monospace" font-size="16">8</text>
+    <text x="957" y="144" fill="#00E5FF" opacity="0.42" font-family="ui-monospace,Menlo,monospace" font-size="16">2</text>
+    <text x="957" y="162" fill="#00E5FF" opacity="0.51" font-family="ui-monospace,Menlo,monospace" font-size="16">ナ</text>
+    <text x="957" y="180" fill="#00E5FF" opacity="0.62" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="957" y="198" fill="#00E5FF" opacity="0.38" font-family="ui-monospace,Menlo,monospace" font-size="16">オ</text>
+    <text x="957" y="216" fill="#00E5FF" opacity="0.43" font-family="ui-monospace,Menlo,monospace" font-size="16">ウ</text>
+    <text x="957" y="234" fill="#00E5FF" opacity="0.29" font-family="ui-monospace,Menlo,monospace" font-size="16">7</text>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 -250" to="0 250" dur="6.0s" begin="3.7s" repeatCount="indefinite"/>
+    <text x="1044" y="0" fill="#FAEDCD" font-family="ui-monospace,Menlo,monospace" font-size="16" filter="url(#glow)">6</text>
+    <text x="1044" y="18" fill="#27C93F" opacity="0.48" font-family="ui-monospace,Menlo,monospace" font-size="16">7</text>
+    <text x="1044" y="36" fill="#F7B733" opacity="0.6" font-family="ui-monospace,Menlo,monospace" font-size="16">9</text>
+    <text x="1044" y="54" fill="#F7B733" opacity="0.61" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+    <text x="1044" y="72" fill="#F7B733" opacity="0.64" font-family="ui-monospace,Menlo,monospace" font-size="16">4</text>
+    <text x="1044" y="90" fill="#00E5FF" opacity="0.4" font-family="ui-monospace,Menlo,monospace" font-size="16">5</text>
+    <text x="1044" y="108" fill="#F7B733" opacity="0.3" font-family="ui-monospace,Menlo,monospace" font-size="16">ア</text>
+    <text x="1044" y="126" fill="#27C93F" opacity="0.49" font-family="ui-monospace,Menlo,monospace" font-size="16">5</text>
+    <text x="1044" y="144" fill="#27C93F" opacity="0.19" font-family="ui-monospace,Menlo,monospace" font-size="16">4</text>
+    <text x="1044" y="162" fill="#27C93F" opacity="0.3" font-family="ui-monospace,Menlo,monospace" font-size="16">ヤ</text>
+    <text x="1044" y="180" fill="#00E5FF" opacity="0.19" font-family="ui-monospace,Menlo,monospace" font-size="16">7</text>
+    <text x="1044" y="198" fill="#00E5FF" opacity="0.36" font-family="ui-monospace,Menlo,monospace" font-size="16">ヤ</text>
+    <text x="1044" y="216" fill="#27C93F" opacity="0.27" font-family="ui-monospace,Menlo,monospace" font-size="16">ウ</text>
+    <text x="1044" y="234" fill="#27C93F" opacity="0.33" font-family="ui-monospace,Menlo,monospace" font-size="16">3</text>
+  </g>
+
+  <!-- dim overlay so the brand text cuts through -->
+  <rect x="5" y="5" width="1090" height="210" rx="26" fill="#04030a" opacity="0.55"/>
+
+  <!-- center brand -->
+  <g filter="url(#glowBig)">
+    <text x="550" y="120" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="58" font-weight="900" letter-spacing="8" fill="url(#mtitle)" text-anchor="middle">
+      WRECKERKNIGHT
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="3.2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <text x="550" y="168" font-family="ui-monospace,Menlo,monospace" font-size="18" letter-spacing="6" fill="#27C93F" text-anchor="middle">▸ [BOOT SEQUENCE] 100% · ALL SYSTEMS GREEN
+    <animate attributeName="opacity" values="0;1;1;0;0" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <rect x="912" y="152" width="12" height="24" fill="#F700FF" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0;1;1;0;0;0" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- scanline -->
+  <rect width="1090" height="26" fill="#00E5FF" opacity="0.06">
+    <animate attributeName="y" values="-26;210" dur="7s" repeatCount="indefinite"/>
+  </rect>
+</svg>

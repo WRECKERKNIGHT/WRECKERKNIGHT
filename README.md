@@ -4,7 +4,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=18,20,30&height=230&section=header&text=HARSHIT+MISHRA&fontSize=70&fontColor=fff&animation=twinkling" width="100%" />
 </a>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=900&color=F700FF&center=true&vCenter=true&width=720&lines=WRECKERKNIGHT;FULL-STACK+x+AI+x+3D;AUTOMATION+OR+BUST;NIGHT+OWL+18%3A00-03%3A00;THE+SKY+IS+NOT+THE+LIMIT" alt="Typing animation" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=900&color=F700FF&center=true&vCenter=true&width=720&lines=WRECKERKNIGHT;FULL-STACK+x+AI+x+3D;AUTOMATION+OR+BUST;ZERO+TO+SHIPPED;SLEEP+IS+A+ROADBLOCK;THE+SKY+IS+NOT+THE+LIMIT" alt="Typing animation" />
 
 </div>
 
@@ -24,6 +24,14 @@
 
 > _That's my DP rendered as a full-screen black & white ASCII portrait — no frame, no colors,
 > just the avatar. If the picture ever changes, ping me and I'll re-render it._
+
+---
+
+## 🟢 Boot Sequence
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/matrix-rain.svg" width="100%" alt="Matrix boot sequence banner" />
+</p>
 
 ---
 
@@ -59,15 +67,34 @@
 
 ---
 
-## 🌙 Night Owl Mode
+## ⏰ Active Hours
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/active-hours.svg" width="72%" alt="Most active 6PM - 3AM" />
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/active-hours.svg" width="100%" alt="Active hours 18:00 - 03:00 peak window" />
 </p>
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WRECKERKNIGHT&theme=solarized_dark" width="100%" alt="Activity heatmap" />
 </p>
+
+---
+
+## 🏆 Loot Table
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=WRECKERKNIGHT&theme=darkhub&no-frame=true&no-bg=true&margin-w=12&column=8" alt="GitHub trophies" />
+</p>
+
+---
+
+## 🐍 Commit Eater
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/output/snake-dark.svg" width="100%" alt="Snake eating my contribution graph" />
+</p>
+
+> _A snake runs on GitHub Actions, swallows my entire contribution graph, and re-renders it every few hours.
+> It has never missed a meal._
 
 ---
 
@@ -144,6 +171,6 @@ The flagship I'm actively building — an AI face-analysis studio with a paramet
 <details>
 <summary>🗄️ System.log — extended activity</summary>
 
-Repos on this account are maintained with automated CI (lint + typecheck + build), GitHub Actions, and GitHub Pages where applicable — this profile included. Everything you see above updates itself while I sleep.
+Repos on this account are maintained with automated CI (lint + typecheck + build), GitHub Actions, and GitHub Pages where applicable — this profile included. The snake renders my contribution graph on a schedule, and everything else above updates itself while I sleep.
 
 </details>

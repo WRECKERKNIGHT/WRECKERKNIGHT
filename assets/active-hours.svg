@@ -1,98 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 260">
   <defs>
     <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0E0A12"/>
       <stop offset="100%" stop-color="#1A1220"/>
     </linearGradient>
-    <linearGradient id="arc" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F7B733"/>
-      <stop offset="60%" stop-color="#D4A373"/>
-      <stop offset="100%" stop-color="#8A5F3D"/>
+    <linearGradient id="peakBar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#B98B56"/>
+      <stop offset="100%" stop-color="#F7B733"/>
     </linearGradient>
     <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#F7B733"/>
       <stop offset="100%" stop-color="#FAEDCD"/>
     </linearGradient>
-    <filter id="glow3" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="6" result="b"/>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <rect x="5" y="5" width="790" height="420" rx="26" fill="url(#bg2)" stroke="#2b2033" stroke-width="2"/>
+  <rect x="5" y="5" width="1090" height="250" rx="26" fill="url(#bg2)" stroke="#2b2033" stroke-width="2"/>
 
-  <!-- ring + ticks -->
-  <circle cx="400" cy="200" r="150" fill="none" stroke="#241A24" stroke-width="1.5"/>
-  <circle cx="400" cy="200" r="140" fill="none" stroke="#3d2f45" stroke-width="1"/>
-  <g stroke="#B98B56">
-    <line x1="400.0" y1="74.0" x2="400.0" y2="50.0" stroke-width="2.2" opacity="0.9"/>
-    <line x1="432.6" y1="78.3" x2="438.8" y2="55.1" stroke-width="1" opacity="0.45"/>
-    <line x1="463.0" y1="90.9" x2="475.0" y2="70.1" stroke-width="1" opacity="0.45"/>
-    <line x1="489.1" y1="110.9" x2="506.1" y2="93.9" stroke-width="2.2" opacity="0.9"/>
-    <line x1="509.1" y1="137.0" x2="529.9" y2="125.0" stroke-width="1" opacity="0.45"/>
-    <line x1="521.7" y1="167.4" x2="544.9" y2="161.2" stroke-width="1" opacity="0.45"/>
-    <line x1="526.0" y1="200.0" x2="550.0" y2="200.0" stroke-width="2.2" opacity="0.9"/>
-    <line x1="521.7" y1="232.6" x2="544.9" y2="238.8" stroke-width="1" opacity="0.45"/>
-    <line x1="509.1" y1="263.0" x2="529.9" y2="275.0" stroke-width="1" opacity="0.45"/>
-    <line x1="489.1" y1="289.1" x2="506.1" y2="306.1" stroke-width="2.2" opacity="0.9"/>
-    <line x1="463.0" y1="309.1" x2="475.0" y2="329.9" stroke-width="1" opacity="0.45"/>
-    <line x1="432.6" y1="321.7" x2="438.8" y2="344.9" stroke-width="1" opacity="0.45"/>
-    <line x1="400.0" y1="326.0" x2="400.0" y2="350.0" stroke-width="2.2" opacity="0.9"/>
-    <line x1="367.4" y1="321.7" x2="361.2" y2="344.9" stroke-width="1" opacity="0.45"/>
-    <line x1="337.0" y1="309.1" x2="325.0" y2="329.9" stroke-width="1" opacity="0.45"/>
-    <line x1="310.9" y1="289.1" x2="293.9" y2="306.1" stroke-width="2.2" opacity="0.9"/>
-    <line x1="290.9" y1="263.0" x2="270.1" y2="275.0" stroke-width="1" opacity="0.45"/>
-    <line x1="278.3" y1="232.6" x2="255.1" y2="238.8" stroke-width="1" opacity="0.45"/>
-    <line x1="274.0" y1="200.0" x2="250.0" y2="200.0" stroke-width="2.2" opacity="0.9"/>
-    <line x1="278.3" y1="167.4" x2="255.1" y2="161.2" stroke-width="1" opacity="0.45"/>
-    <line x1="290.9" y1="137.0" x2="270.1" y2="125.0" stroke-width="1" opacity="0.45"/>
-    <line x1="310.9" y1="110.9" x2="293.9" y2="93.9" stroke-width="2.2" opacity="0.9"/>
-    <line x1="337.0" y1="90.9" x2="325.0" y2="70.1" stroke-width="1" opacity="0.45"/>
-    <line x1="367.4" y1="78.3" x2="361.2" y2="55.1" stroke-width="1" opacity="0.45"/>
+  <!-- title -->
+  <text x="70" y="54" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="38" font-weight="900" letter-spacing="7" fill="url(#txt)" filter="url(#glow)">ACTIVE HOURS</text>
+  <text x="1030" y="50" font-family="ui-monospace,Menlo,monospace" font-size="20" letter-spacing="3" fill="#00E5FF" text-anchor="end">PEAK WINDOW 18:00 — 03:00</text>
+
+  <line x1="70" y1="72" x2="1030" y2="72" stroke="#33253c" stroke-width="1"/>
+
+  <!-- peak zone shading -->
+  <rect x="60" y="84" width="163.3" height="128" fill="#F7B733" opacity="0.07" rx="8"/>
+  <rect x="795" y="84" width="245" height="128" fill="#F7B733" opacity="0.07" rx="8"/>
+
+  <!-- grid lines -->
+  <g stroke="#241A24" stroke-width="1">
+    <line x1="60" y1="86" x2="60" y2="212"/>
+    <line x1="305" y1="86" x2="305" y2="212"/>
+    <line x1="550" y1="86" x2="550" y2="212"/>
+    <line x1="795" y1="86" x2="795" y2="212"/>
+    <line x1="1040" y1="86" x2="1040" y2="212"/>
   </g>
+  <line x1="60" y1="212" x2="1040" y2="212" stroke="#3d2f45" stroke-width="1.5"/>
 
-  <!-- night arc 18:00 → 03:00 (through midnight at top, 135°) -->
-  <path d="M 260 200 A 140 140 0 0 1 499 101" fill="none" stroke="url(#arc)" stroke-width="14" stroke-linecap="round" filter="url(#glow3)">
-    <animate attributeName="stroke-opacity" values="0.85;1;0.85" dur="3s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 260 200 A 140 140 0 0 1 499 101" fill="none" stroke="#FAEDCD" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
-
-  <!-- moon dot travelling the night arc -->
+  <!-- dim daytime bars -->
   <g>
-    <circle r="9" fill="#F7B733" opacity="0.35">
-      <animateMotion dur="8s" repeatCount="indefinite" path="M 260 200 A 140 140 0 0 1 499 101"/>
-    </circle>
-    <circle r="5" fill="#FAEDCD">
-      <animateMotion dur="8s" repeatCount="indefinite" path="M 260 200 A 140 140 0 0 1 499 101"/>
-    </circle>
+    <rect x="232.8" y="148" width="22" height="62" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="273.6" y="164" width="22" height="46" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="314.4" y="157" width="22" height="53" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="355.3" y="151" width="22" height="59" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="396.1" y="162" width="22" height="48" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="436.9" y="169" width="22" height="41" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="477.8" y="173" width="22" height="37" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="518.6" y="175" width="22" height="35" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="559.4" y="164" width="22" height="46" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="600.2" y="169" width="22" height="41" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="641.1" y="173" width="22" height="37" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="681.9" y="167" width="22" height="43" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="722.8" y="147" width="22" height="63" rx="6" fill="#3d2f45" opacity="0.55"/>
+    <rect x="763.6" y="120" width="22" height="90" rx="6" fill="#3d2f45" opacity="0.55"/>
   </g>
+
+  <!-- peak window bars (18:00–23:59 right, 00:00–03:00 left) -->
+  <g filter="url(#glow)">
+    <rect x="69.4" y="101" width="22" height="109" rx="6" fill="url(#peakBar)"><animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="0.0s" repeatCount="indefinite"/></rect>
+    <rect x="110.3" y="107" width="22" height="103" rx="6" fill="url(#peakBar)"><animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="0.08s" repeatCount="indefinite"/></rect>
+    <rect x="151.1" y="115" width="22" height="95" rx="6" fill="url(#peakBar)"><animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="0.16s" repeatCount="indefinite"/></rect>
+    <rect x="191.9" y="124" width="22" height="86" rx="6" fill="url(#peakBar)"><animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="0.24s" repeatCount="indefinite"/></rect>
+    <rect x="804.4" y="100" width="22" height="110" rx="6" fill="url(#peakBar)"><animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="1.44s" repeatCount="indefinite"/></rect>
+    <rect x="845.2" y="96" width="22" height="114" rx="6" fill="url(#peakBar)"><animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="1.52s" repeatCount="indefinite"/></rect>
+    <rect x="886.1" y="99" width="22" height="111" rx="6" fill="url(#peakBar)"><animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></rect>
+    <rect x="926.9" y="103" width="22" height="107" rx="6" fill="url(#peakBar)"><animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="1.68s" repeatCount="indefinite"/></rect>
+    <rect x="967.8" y="105" width="22" height="105" rx="6" fill="url(#peakBar)"><animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="1.76s" repeatCount="indefinite"/></rect>
+    <rect x="1008.6" y="104" width="22" height="106" rx="6" fill="url(#peakBar)"><animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="1.84s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- sweeping now-cursor -->
+  <line y1="86" y2="212" stroke="#00E5FF" stroke-width="2" opacity="0.7" filter="url(#glow)">
+    <animate attributeName="x1" values="60;1040" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="60;1040" dur="14s" repeatCount="indefinite"/>
+  </line>
 
   <!-- hour labels -->
   <g font-family="ui-monospace,Menlo,monospace" font-size="15" fill="#8d7b94" text-anchor="middle">
-    <text x="400" y="42">00</text>
-    <text x="560" y="204">06</text>
-    <text x="400" y="368">12</text>
-    <text x="240" y="204" fill="#F7B733" font-weight="700">18</text>
-    <text x="524" y="116" fill="#F7B733" font-weight="700">03</text>  </g>
-
-  <!-- center -->
-  <text x="400" y="168" font-family="ui-monospace,Menlo,monospace" font-size="17" letter-spacing="4" fill="#8d7b94" text-anchor="middle">MOST ACTIVE</text>
-  <text x="400" y="206" font-family="ui-monospace,Menlo,monospace" font-size="34" font-weight="800" fill="url(#txt)" text-anchor="middle">NIGHT OWL</text>
-  <text x="400" y="242" font-family="ui-monospace,Menlo,monospace" font-size="22" fill="#00E5FF" text-anchor="middle">18:00 — 03:00</text>
-
-  <!-- stars -->
-  <g fill="#FAEDCD">
-    <path d="M 120 90 l 4 10 l 10 4 l -10 4 l -4 10 l -4 -10 l -10 -4 l 10 -4 Z">
-      <animate attributeName="opacity" values="1;0.2;1" dur="2.2s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 690 120 l 3 7 l 7 3 l -7 3 l -3 7 l -3 -7 l -7 -3 l 7 -3 Z">
-      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.7s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 160 330 l 3 7 l 7 3 l -7 3 l -3 7 l -3 -7 l -7 -3 l 7 -3 Z">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.6s" repeatCount="indefinite"/>
-    </path>
+    <text x="80.4" y="238" fill="#F7B733" font-weight="700">00</text>
+    <text x="325.4" y="238">06</text>
+    <text x="570.4" y="238">12</text>
+    <text x="815.4" y="238" fill="#F7B733" font-weight="700">18</text>
   </g>
 
   <!-- footer -->
-  <text x="400" y="404" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#5a4a63" text-anchor="middle">● offline during daylight hours ●</text>
+  <text x="1030" y="238" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#5a4a63" text-anchor="end">▸ remaining hours: fully automated</text>
 </svg>
