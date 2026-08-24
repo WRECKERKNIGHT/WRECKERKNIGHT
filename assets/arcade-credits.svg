@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-label="Arcade high scores and scrolling credits">
+  <defs>
+    <linearGradient id="arcbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#08080f"/>
+      <stop offset="100%" stop-color="#05050a"/>
+    </linearGradient>
+    <clipPath id="roll"><rect x="575" y="66" width="480" height="272"/></clipPath>
+  </defs>
+
+  <rect x="5" y="5" width="1090" height="420" rx="18" fill="url(#arcbg)" stroke="#F700FF" stroke-width="2.5"/>
+  <rect x="14" y="14" width="1072" height="402" rx="12" fill="none" stroke="#F7B733" stroke-width="1" stroke-dasharray="6 5" opacity="0.6"/>
+
+  <!-- marquee -->
+  <text x="550" y="52" font-family="'Courier New',monospace" font-size="28" font-weight="900" letter-spacing="10" text-anchor="middle" fill="#F700FF">&#9733; WRECKERKNIGHT ARCADE &#9733;
+    <animate attributeName="opacity" values="1;0.75;1" dur="2.2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- HIGH SCORE TABLE -->
+  <g font-family="'Courier New',monospace" font-size="19" font-weight="bold">
+    <text x="62" y="92" fill="#00E5FF">RANK&#183;GAME&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;SCORE</text>
+
+    <text x="62" y="130"><tspan fill="#F7B733">1</tspan><tspan fill="#E6EDF3"> STYLE-YOUR-LOOKS</tspan></text>
+    <text x="538" y="130" text-anchor="end" fill="#F7B733">999900</text>
+
+    <text x="62" y="168"><tspan fill="#F7B733">2</tspan><tspan fill="#E6EDF3"> URCAREERBUDDY</tspan></text>
+    <text x="538" y="168" text-anchor="end" fill="#F7B733">875400</text>
+
+    <text x="62" y="206"><tspan fill="#F7B733">3</tspan><tspan fill="#E6EDF3"> PORTFOLIO.SHOWROOM</tspan></text>
+    <text x="538" y="206" text-anchor="end" fill="#F7B733">760250</text>
+
+    <text x="62" y="244"><tspan fill="#F7B733">4</tspan><tspan fill="#E6EDF3"> JENNY-AI.ASSISTANT</tspan></text>
+    <text x="538" y="244" text-anchor="end" fill="#F7B733">648300</text>
+
+    <text x="62" y="282"><tspan fill="#F7B733">5</tspan><tspan fill="#E6EDF3"> EXPENSETRACKER</tspan></text>
+    <text x="538" y="282" text-anchor="end" fill="#F7B733">512000</text>
+
+    <text x="62" y="320"><tspan fill="#F7B733">6</tspan><tspan fill="#E6EDF3"> PRODUCTIVE-DUDE</tspan></text>
+    <text x="538" y="320" text-anchor="end" fill="#F7B733">388150</text>
+  </g>
+
+  <line x1="560" y1="72" x2="560" y2="332" stroke="#232134"/>
+
+  <!-- SCROLLING CREDITS -->
+  <g clip-path="url(#roll)" font-family="'Courier New',monospace" font-size="17" text-anchor="middle">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -750" dur="18s" repeatCount="indefinite"/>
+      <g fill="#9aa4ad">
+        <text x="815" y="84"></text>
+        <text x="815" y="114" fill="#F7B733" font-weight="bold">WRECKERKNIGHT</text>
+        <text x="815" y="144" fill="#F7B733" font-weight="bold">INDUSTRIES</text>
+        <text x="815" y="174"></text>
+        <text x="815" y="204">PRESENTS</text>
+        <text x="815" y="234"></text>
+        <text x="815" y="264">A HARSHIT MISHRA</text>
+        <text x="815" y="294">PRODUCTION</text>
+        <text x="815" y="324"></text>
+        <text x="815" y="354">FEATURING</text>
+        <text x="815" y="384"></text>
+        <text x="815" y="414" fill="#00E5FF">STYLE-YOUR-LOOKS</text>
+        <text x="815" y="444" fill="#00E5FF">URCAREERBUDDY</text>
+        <text x="815" y="474" fill="#00E5FF">PORTFOLIO SHOWROOM</text>
+        <text x="815" y="504" fill="#00E5FF">JENNY-AI ASSISTANT</text>
+        <text x="815" y="534" fill="#00E5FF">EXPENSETRACKER</text>
+        <text x="815" y="564"></text>
+        <text x="815" y="594">SOUNDTRACK</text>
+        <text x="815" y="624" fill="#F700FF">SPOTIFY.LIVE</text>
+        <text x="815" y="654"></text>
+        <text x="815" y="684">NO BUGS WERE HARMED</text>
+        <text x="815" y="714"></text>
+        <text x="815" y="744">STAY HYDRATED</text>
+        <text x="815" y="774"></text>
+        <text x="815" y="804"></text>
+        <text x="815" y="834"></text>
+      </g>
+    </g>
+  </g>
+
+  <!-- bottom control strip -->
+  <line x1="30" y1="352" x2="1070" y2="352" stroke="#232134"/>
+  <g font-family="'Courier New',monospace" font-size="19" font-weight="bold">
+    <text x="42" y="392" fill="#9aa4ae">CREDIT 99</text>
+    <text x="550" y="392" text-anchor="middle" fill="#00E5FF">INSERT COIN
+      <animate attributeName="opacity" values="1;0;1" dur="0.9s" calcMode="discrete" repeatCount="indefinite"/>
+    </text>
+    <text x="1058" y="392" text-anchor="end" fill="#9aa4ae">&#169; 2026 &#183; 1UP</text>
+  </g>
+</svg>

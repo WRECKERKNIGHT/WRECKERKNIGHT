@@ -11,6 +11,10 @@
 ---
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/glitch-logo.svg" width="100%" alt="WRECKERKNIGHT glitch logo intro" />
+</p>
+
+<p align="center">
   <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/terminal-logo.svg" width="100%" alt="WRECKERKNIGHT 3D terminal logo" />
 </p>
 
@@ -32,6 +36,16 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/matrix-rain.svg" width="100%" alt="Matrix boot sequence banner" />
 </p>
+
+---
+
+## 💻 Living Terminal
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/self-typing-terminal.svg" width="100%" alt="Terminal that types itself: whoami, uptime, now playing, ship everything" />
+</p>
+
+> _It types itself. Every reload, a fresh boot._
 
 ---
 
@@ -184,3 +198,13 @@ Repos on this account are maintained with automated CI (lint + typecheck + build
 </p>
 
 > _Mini-player + system tray pinned at the foot of the profile — Spotify state, repo telemetry, sync time. Auto-refreshed every 30 minutes._
+
+---
+
+## 🕹️ Arcade Credits
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/arcade-credits.svg" width="100%" alt="Arcade end-screen: high scores table and scrolling credits" />
+</p>
+
+> _Thanks for playing. Insert coin to continue._

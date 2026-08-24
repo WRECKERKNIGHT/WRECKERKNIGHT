@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-label="Self-typing terminal">
+  <defs>
+    <linearGradient id="tbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10141b"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <clipPath id="c1"><rect x="86" y="74" width="0" height="30"><animate attributeName="width" begin="cycle.begin+0.50s" dur="0.55s" calcMode="discrete" values="0;19;38;56;75;88" repeatCount="1"/></rect></clipPath>
+    <clipPath id="c2"><rect x="86" y="142" width="0" height="30"><animate attributeName="width" begin="cycle.begin+2.85s" dur="0.55s" calcMode="discrete" values="0;39;78;117;156;176" repeatCount="1"/></rect></clipPath>
+    <clipPath id="c3"><rect x="86" y="210" width="0" height="30"><animate attributeName="width" begin="cycle.begin+5.20s" dur="0.55s" calcMode="discrete" values="0;53;106;159;212;264" repeatCount="1"/></rect></clipPath>
+    <clipPath id="c4"><rect x="86" y="278" width="0" height="30"><animate attributeName="width" begin="cycle.begin+7.55s" dur="0.55s" calcMode="discrete" values="0;29;58;86;115;143" repeatCount="1"/></rect></clipPath>
+    <clipPath id="c5"><rect x="86" y="346" width="0" height="30"><animate attributeName="width" begin="cycle.begin+9.90s" dur="0.55s" calcMode="discrete" values="0;47;94;141;188;231" repeatCount="1"/></rect></clipPath>
+  </defs>
+
+  <!-- hidden master clock -->
+  <rect width="0" height="0" fill="none">
+    <animate id="cycle" attributeName="x" values="0;0" dur="13s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="6" y="6" width="1088" height="418" rx="16" fill="url(#tbg)" stroke="#30363d" stroke-width="2"/>
+  <rect x="6" y="6" width="1088" height="44" rx="14" fill="#161b22"/>
+  <circle cx="38" cy="28" r="7" fill="#FF5F56"/>
+  <circle cx="64" cy="28" r="7" fill="#FFBD2E"/>
+  <circle cx="90" cy="28" r="7" fill="#27C93F"/>
+  <text x="550" y="34" font-family="'Courier New',monospace" font-size="16" fill="#8b949e" text-anchor="middle">wreckerknight@github: ~/profile</text>
+
+  <g font-family="'Courier New',monospace" font-size="18" font-weight="bold">
+    <!-- pair 1 -->
+    <text x="64" y="96" fill="#F700FF">&gt;</text>
+    <g clip-path="url(#c1)"><text x="86" y="96" fill="#E6EDF3">whoami</text></g>
+    <text x="86" y="124" fill="#9aa4ad" opacity="0">WRECKERKNIGHT // FULL-STACK x AI x 3D<animate attributeName="opacity" begin="cycle.begin+1.15s" dur="0.05s" values="0;1" calcMode="discrete" repeatCount="1"/></text>
+
+    <!-- pair 2 -->
+    <text x="64" y="164" fill="#F700FF">&gt;</text>
+    <g clip-path="url(#c2)"><text x="86" y="164" fill="#E6EDF3">uptime --human</text></g>
+    <text x="86" y="192" fill="#9aa4ad" opacity="0">awake 18h &#183; peak window 15:00-03:00 &#183; coffee-based<animate attributeName="opacity" begin="cycle.begin+3.50s" dur="0.05s" values="0;1" calcMode="discrete" repeatCount="1"/></text>
+
+    <!-- pair 3 -->
+    <text x="64" y="232" fill="#F700FF">&gt;</text>
+    <g clip-path="url(#c3)"><text x="86" y="232" fill="#E6EDF3">git log -1 --pretty=%s</text></g>
+    <text x="86" y="260" fill="#9aa4ad" opacity="0">ship it, then polish it, then automate it<animate attributeName="opacity" begin="cycle.begin+5.85s" dur="0.05s" values="0;1" calcMode="discrete" repeatCount="1"/></text>
+
+    <!-- pair 4 -->
+    <text x="64" y="300" fill="#F700FF">&gt;</text>
+    <g clip-path="url(#c4)"><text x="86" y="300" fill="#E6EDF3">now-playing</text></g>
+    <text x="86" y="328" fill="#00E5FF" opacity="0">&#9654; SPOTIFY.LIVE &#8212; feeding the bottom tray<animate attributeName="opacity" begin="cycle.begin+8.20s" dur="0.05s" values="0;1" calcMode="discrete" repeatCount="1"/></text>
+
+    <!-- pair 5 -->
+    <text x="64" y="368" fill="#F700FF">&gt;</text>
+    <g clip-path="url(#c5)"><text x="86" y="368" fill="#E6EDF3">sudo ship everything</text></g>
+    <text x="86" y="396" fill="#27C93F" opacity="0">[OK] zero excuses detected &#183; deployment: ALWAYS<animate attributeName="opacity" begin="cycle.begin+10.55s" dur="0.05s" values="0;1" calcMode="discrete" repeatCount="1"/></text>
+  </g>
+
+  <!-- cursor -->
+  <rect x="330" y="352" width="11" height="22" fill="#27C93F">
+    <animate attributeName="opacity" values="1;0;1" dur="0.9s" calcMode="discrete" repeatCount="indefinite"/>
+  </rect>
+</svg>
