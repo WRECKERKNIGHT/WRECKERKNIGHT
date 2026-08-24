@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="56" viewBox="0 0 1440 56" role="img" aria-label="System tray bar: now playing, online status and repo telemetry">
+  <rect width="1440" height="56" fill="#0d1117"/>
+  <line x1="0" y1="1" x2="1440" y2="1" stroke="#F700FF" stroke-opacity="0.55"/>
+  <line x1="0" y1="55" x2="1440" y2="55" stroke="#00E5FF" stroke-opacity="0.55"/>
+  <clipPath id="media"><rect x="130" y="0" width="470" height="56"/></clipPath>
+
+  <!-- MEDIA PLAYER -->
+  <g font-family="'Courier New',monospace" clip-path="url(#media)">
+      <rect x="16" y="32" width="5" height="14" fill="#F7B733"><animate attributeName="height" values="14;9;19;5;5;23" dur="0.7s" begin="-0.00s" repeatCount="indefinite"/><animate attributeName="y" values="32;37;27;41;41;23" dur="0.7s" begin="-0.00s" repeatCount="indefinite"/></rect>
+      <rect x="27" y="23" width="5" height="23" fill="#F7B733"><animate attributeName="height" values="23;5;23;9;5;5" dur="0.87s" begin="-0.09s" repeatCount="indefinite"/><animate attributeName="y" values="23;41;23;37;41;41" dur="0.87s" begin="-0.09s" repeatCount="indefinite"/></rect>
+      <rect x="38" y="41" width="5" height="5" fill="#F7B733"><animate attributeName="height" values="5;9;5;23;19;5" dur="1.06s" begin="-0.18s" repeatCount="indefinite"/><animate attributeName="y" values="41;37;41;23;27;41" dur="1.06s" begin="-0.18s" repeatCount="indefinite"/></rect>
+      <rect x="49" y="41" width="5" height="5" fill="#F7B733"><animate attributeName="height" values="5;9;23;5;23;23" dur="0.85s" begin="-0.27s" repeatCount="indefinite"/><animate attributeName="y" values="41;37;23;41;23;23" dur="0.85s" begin="-0.27s" repeatCount="indefinite"/></rect>
+      <rect x="60" y="37" width="5" height="9" fill="#F7B733"><animate attributeName="height" values="9;5;23;9;14;19" dur="0.72s" begin="-0.36s" repeatCount="indefinite"/><animate attributeName="y" values="37;41;23;37;32;27" dur="0.72s" begin="-0.36s" repeatCount="indefinite"/></rect>
+      <rect x="71" y="41" width="5" height="5" fill="#F7B733"><animate attributeName="height" values="5;23;14;23;9;5" dur="0.94s" begin="-0.45s" repeatCount="indefinite"/><animate attributeName="y" values="41;23;32;23;37;41" dur="0.94s" begin="-0.45s" repeatCount="indefinite"/></rect>
+      <rect x="82" y="37" width="5" height="9" fill="#F7B733"><animate attributeName="height" values="9;14;5;23;5;23" dur="0.68s" begin="-0.54s" repeatCount="indefinite"/><animate attributeName="y" values="37;32;41;23;41;23" dur="0.68s" begin="-0.54s" repeatCount="indefinite"/></rect>
+      <rect x="93" y="37" width="5" height="9" fill="#F7B733"><animate attributeName="height" values="9;19;23;19;14;19" dur="0.94s" begin="-0.63s" repeatCount="indefinite"/><animate attributeName="y" values="37;27;23;27;32;27" dur="0.94s" begin="-0.63s" repeatCount="indefinite"/></rect>
+      <rect x="104" y="27" width="5" height="19" fill="#F7B733"><animate attributeName="height" values="19;14;14;9;9;9" dur="0.69s" begin="-0.72s" repeatCount="indefinite"/><animate attributeName="y" values="27;32;32;37;37;37" dur="0.69s" begin="-0.72s" repeatCount="indefinite"/></rect>
+      <text x="140" y="34" font-size="19" font-weight="bold" fill="#00E5FF"> NOW PLAYING ▸ Post Malone — Circles  NOW PLAYING ▸ Post Malone — Circles </text>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-470 0" dur="16s" repeatCount="indefinite"/>
+  </g>
+  <g font-family="'Courier New',monospace" clip-path="url(#media)">
+      <text x="610" y="34" font-size="19" font-weight="bold" fill="#00E5FF"> NOW PLAYING ▸ Post Malone — Circles  NOW PLAYING ▸ Post Malone — Circles </text>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-470 0" dur="16s" repeatCount="indefinite"/>
+  </g>
+  <line x1="620" y1="10" x2="620" y2="46" stroke="#30363d"/>
+
+  <!-- SYSTEM TRAY -->
+  <g font-family="'Courier New',monospace" font-size="17" font-weight="bold">
+    <circle cx="662" cy="28" r="6" fill="#27C93F">
+      <animate attributeName="opacity" values="1;0.35;1" dur="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="662" cy="28" r="3" fill="#27C93F"/>
+    <text x="678" y="34" fill="#27C93F">ONLINE</text>
+
+    <line x1="762" y1="12" x2="762" y2="44" stroke="#30363d"/>
+    <text x="782" fill="#00E5FF">REPOS:18</text>
+
+    <text x="902" fill="#F7B733">&#9733;:24</text>
+
+    <text x="970" fill="#F700FF">FOLLOWERS:2</text>
+
+    <line x1="1132" y1="12" x2="1132" y2="44" stroke="#30363d"/>
+    <circle cx="1156" cy="28" r="5" fill="#FF5C57">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" calcMode="discrete" repeatCount="indefinite"/>
+    </circle>
+    <text x="1170" fill="#F700FF">LIVE</text>
+    <rect x="1220" y="18" width="9" height="19" fill="#00E5FF">
+      <animate attributeName="opacity" values="1;0;1" dur="0.9s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="1426" y="34" text-anchor="end" fill="#8d7b94">IST.UTC+05:30</text>
+  </g>
+</svg>

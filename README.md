@@ -10,16 +10,6 @@
 
 ---
 
-## 📟 System Status Bar
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/status-bar.svg" width="100%" alt="Live system status bar: online state, Spotify now playing, live feed" />
-</p>
-
-> _Live feed — system status, what's playing on Spotify and stream state, auto-refreshed every 30 minutes._
-
----
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/terminal-logo.svg" width="100%" alt="WRECKERKNIGHT 3D terminal logo" />
 </p>
@@ -184,3 +174,13 @@ The flagship I'm actively building — an AI face-analysis studio with a paramet
 Repos on this account are maintained with automated CI (lint + typecheck + build), GitHub Actions, and GitHub Pages where applicable — this profile included. Everything else above updates itself while I sleep.
 
 </details>
+
+---
+
+## 📟 System Tray — pinned feed
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/bottom-bar.svg" width="100%" alt="Bottom system tray: Spotify now playing, online status, repo telemetry" />
+</p>
+
+> _Mini-player + system tray pinned at the foot of the profile — Spotify state, repo telemetry, sync time. Auto-refreshed every 30 minutes._
