@@ -6,16 +6,17 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=900&color=F700FF&center=true&vCenter=true&width=720&lines=WRECKERKNIGHT;FULL-STACK+x+AI+x+3D;AUTOMATION+OR+BUST;ZERO+TO+SHIPPED;SLEEP+IS+A+ROADBLOCK;THE+SKY+IS+NOT+THE+LIMIT" alt="Typing animation" />
 
-### 📡 HUD — live telemetry
-
-<a href="https://github.com/WRECKERKNIGHT"><img src="https://img.shields.io/badge/%E2%97%8F_SYSTEM-ONLINE-27C93F?style=for-the-badge" alt="System online" /></a>
-<a href="https://github.com/WRECKERKNIGHT?tab=repositories"><img src="https://img.shields.io/github/followers/WRECKERKNIGHT?label=FOLLOWERS&style=for-the-badge&color=00E5FF" alt="Followers" /></a>
-<a href="https://github.com/WRECKERKNIGHT?tab=repositories"><img src="https://img.shields.io/github/stars/WRECKERKNIGHT?affiliations=OWNER&label=TOTAL_STARS&style=for-the-badge&color=F7B733" alt="Total stars" /></a>
-<a href="https://github.com/WRECKERKNIGHT?tab=repositories"><img src="https://img.shields.io/github/forks/WRECKERKNIGHT?affiliations=OWNER&label=FORKS&style=for-the-badge&color=A9B7C6" alt="Forks" /></a>
-<a href="https://discord.com/users/1451858412211146835"><img src="https://img.shields.io/badge/DISCORD-DM_OPEN-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<img src="https://komarev.com/ghpvc/?username=WRECKERKNIGHT&label=PROFILE_VIEWS&color=ff6b35&style=for-the-badge" alt="Profile views" />
-
 </div>
+
+---
+
+## 📟 System Status Bar
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/status-bar.svg" width="100%" alt="Live system status bar: online state, Spotify now playing, live feed" />
+</p>
+
+> _Live feed — system status, what's playing on Spotify and stream state, auto-refreshed every 30 minutes._
 
 ---
 
@@ -41,16 +42,6 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/matrix-rain.svg" width="100%" alt="Matrix boot sequence banner" />
 </p>
-
----
-
-## 📡 Status Ticker — live
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/status-ticker.svg" width="100%" alt="Scrolling live status ticker with stars, forks and followers" />
-</p>
-
-> _Auto-regenerated every 3 hours by GitHub Actions with real numbers straight from the GitHub API._
 
 ---
 
@@ -82,14 +73,6 @@
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=WRECKERKNIGHT&theme=cyberpunk&hide_border=true" width="62%" />
-</p>
-
----
-
-## 🏆 Trophy Shelf
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=WRECKERKNIGHT&theme=radical&no-frame=true&no-bg=true&row=1&column=7&margin-w=8" width="100%" alt="GitHub profile trophies" />
 </p>
 
 ---
@@ -165,16 +148,6 @@ The flagship I'm actively building — an AI face-analysis studio with a paramet
 
 ---
 
-## 💭 Random Transmission
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" width="60%" alt="Random dev quote" />
-</p>
-
-> _A new quote loads on every page render._
-
----
-
 ## 🕹️ Achievements
 
 - 🔭 Currently building **style-your-looks** — AI face-analysis + 3D styling mannequin
@@ -211,9 +184,3 @@ The flagship I'm actively building — an AI face-analysis studio with a paramet
 Repos on this account are maintained with automated CI (lint + typecheck + build), GitHub Actions, and GitHub Pages where applicable — this profile included. Everything else above updates itself while I sleep.
 
 </details>
-
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=18,20,30&height=130&section=footer&animation=twinkling" width="100%" alt="Footer wave" />
-</p>
