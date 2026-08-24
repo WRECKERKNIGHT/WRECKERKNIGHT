@@ -77,7 +77,7 @@
   <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/coding-stats.svg" width="100%" alt="Coding telemetry: total commits, estimated coding hours, days on grid" />
 </p>
 
-> _Commit count is pulled live from GitHub Search. Hours are an estimate (~1.25 hrs per shipped commit), refreshed every 30 minutes._
+> _Nothing estimated. Commits, PRs and issues are counted live from the GitHub API; numbers roll up on every page load._
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WRECKERKNIGHT&theme=solarized_dark" width="100%" alt="Activity heatmap" />
