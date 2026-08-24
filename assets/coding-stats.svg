@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="156" viewBox="0 0 1440 156" role="img" aria-label="Coding telemetry: commits, estimated hours, days shipping">
+  <defs>
+    <linearGradient id="ctbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10141b"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="1432" height="148" rx="20" fill="url(#ctbg)" stroke="#232134" stroke-width="2"/>
+  <line x1="4" y1="6" x2="1436" y2="6" stroke="#F700FF" stroke-opacity="0.55"/>
+  <line x1="4" y1="150" x2="1436" y2="150" stroke="#00E5FF" stroke-opacity="0.55"/>
+
+  <text x="34" y="34" font-family="'Courier New',monospace" font-size="24" font-weight="900" letter-spacing="6" fill="#F7B733">CODING.TELEMETRY</text>
+  <circle cx="298" cy="27" r="5" fill="#F700FF">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" calcMode="discrete" repeatCount="indefinite"/>
+  </circle>
+  <text x="1406" y="32" font-family="'Courier New',monospace" font-size="14" fill="#6e7681" text-anchor="end">SYNC 24.08 20:02 UTC</text>
+
+  <line x1="480" y1="52" x2="480" y2="140" stroke="#30363d"/>
+  <line x1="960" y1="52" x2="960" y2="140" stroke="#30363d"/>
+
+  <g>
+    
+    <text x="40" y="66" font-family="'Courier New',monospace" font-size="15" letter-spacing="4" fill="#9aa4ad">TOTAL.COMMITS.PUSHED</text>
+    <text x="40" y="116" font-family="'Courier New',monospace" font-size="50" font-weight="900" fill="#F700FF">
+      712
+      <animate attributeName="opacity" values="1;0.82;1" dur="2.6s" repeatCount="indefinite"/>
+    </text>
+    <text x="40" y="136" font-family="'Courier New',monospace" font-size="12" fill="#6e7681">counted live from github search</text>
+  </g>
+  <g>
+    
+    <text x="520" y="66" font-family="'Courier New',monospace" font-size="15" letter-spacing="4" fill="#9aa4ad">ESTIMATED.CODING.HOURS</text>
+    <text x="520" y="116" font-family="'Courier New',monospace" font-size="50" font-weight="900" fill="#00E5FF">
+      890+
+      <animate attributeName="opacity" values="1;0.82;1" dur="2.6s" repeatCount="indefinite"/>
+    </text>
+    <text x="520" y="136" font-family="'Courier New',monospace" font-size="12" fill="#6e7681">&#8776; 1.25 hrs per shipped commit</text>
+  </g>
+  <g>
+    
+    <text x="1000" y="66" font-family="'Courier New',monospace" font-size="15" letter-spacing="4" fill="#9aa4ad">DAYS.ON.GRID</text>
+    <text x="1000" y="116" font-family="'Courier New',monospace" font-size="50" font-weight="900" fill="#F7B733">
+      506
+      <animate attributeName="opacity" values="1;0.82;1" dur="2.6s" repeatCount="indefinite"/>
+    </text>
+    <text x="1000" y="136" font-family="'Courier New',monospace" font-size="12" fill="#6e7681">since day zero &#183; 24 stars earned</text>
+  </g>
+</svg>

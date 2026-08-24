@@ -39,16 +39,6 @@
 
 ---
 
-## 💻 Living Terminal
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/self-typing-terminal.svg" width="100%" alt="Terminal that types itself: whoami, uptime, now playing, ship everything" />
-</p>
-
-> _It types itself. Every reload, a fresh boot._
-
----
-
 ## 📈 Live Contribution Graph
 
 <p align="center">
@@ -81,11 +71,13 @@
 
 ---
 
-## ⏰ Active Hours
+## 📊 Coding Telemetry
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/active-hours.svg" width="100%" alt="Active hours 18:00 - 03:00 peak window" />
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/coding-stats.svg" width="100%" alt="Coding telemetry: total commits, estimated coding hours, days on grid" />
 </p>
+
+> _Commit count is pulled live from GitHub Search. Hours are an estimate (~1.25 hrs per shipped commit), refreshed every 30 minutes._
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WRECKERKNIGHT&theme=solarized_dark" width="100%" alt="Activity heatmap" />

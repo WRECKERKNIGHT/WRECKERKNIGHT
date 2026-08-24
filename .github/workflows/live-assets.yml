@@ -22,7 +22,7 @@ jobs:
       - name: Build bar with live Spotify state + repo stats
         run: |
           python3 - <<'PY'
-          import json, random, re, urllib.request, datetime, pathlib
+          import json, os, random, re, urllib.request, datetime, pathlib
 
           UID = "31y7htruozzrnh2fraukjakcg4ii"
           SPOTIFY_URL = ("https://spotify-github-profile.kittinanx.com/api/view"
@@ -53,7 +53,6 @@ jobs:
                   req = urllib.request.Request(url, headers=headers)
                   return json.load(urllib.request.urlopen(req))
 
-              import os
               user = get(f"https://api.github.com/users/{GH_USER}")
               repos, page = [], 1
               while True:
@@ -177,162 +176,122 @@ jobs:
             git push
           fi
 
-  active-hours:
-    name: Active hours from real commits
+
+  telemetry:
+    name: Coding telemetry (commits + hours)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build chart from commit timestamps
+      - name: Build coding stats card
         run: |
           python3 - <<'PY'
           import json, os, urllib.request, datetime, pathlib
 
           USER = "WRECKERKNIGHT"
-          TZ_OFFSET = 5.5  # IST
+          HOURS_PER_COMMIT = 1.25
 
-          GOLD_HEX = "#F7B733"
+          PINK, CYAN, GOLD, GRAY = "#F700FF", "#00E5FF", "#F7B733", "#9aa4ad"
 
           def get(url):
-              headers = {"User-Agent": "active-hours", "Accept": "application/vnd.github+json"}
+              headers = {
+                  "User-Agent": "coding-telemetry",
+                  "Accept": "application/vnd.github+json",
+              }
               token = os.environ.get("GH_TOKEN")
               if token:
                   headers["Authorization"] = f"Bearer {token}"
               req = urllib.request.Request(url, headers=headers)
               return json.load(urllib.request.urlopen(req))
 
-          def commit_histogram():
-              hist = [0] * 24
-              for page in (1, 2, 3):
-                  try:
-                      events = get(f"https://api.github.com/users/{USER}/events/public?per_page=100&page={page}")
-                  except Exception as e:
-                      print("events page failed:", e)
+          def esc(s):
+              return s.replace("&", "&amp;")
+
+          def fmt(n):
+              return f"{n:,}"
+
+          def fetch_stats():
+              s = get(f"https://api.github.com/search/commits?q=author:{USER}+is:public")
+              commits = s.get("total_count", 0)
+
+              user = get(f"https://api.github.com/users/{USER}")
+              created = datetime.datetime.fromisoformat(user["created_at"].replace("Z", "+00:00"))
+              days = max(1, (datetime.datetime.now(datetime.timezone.utc) - created).days)
+
+              repos = []
+              page = 1
+              while True:
+                  batch = get(f"https://api.github.com/users/{USER}/repos?per_page=100&page={page}")
+                  if not batch:
                       break
-                  if not events:
-                      break
-                  for ev in events:
-                      if ev.get("type") != "PushEvent":
-                          continue
-                      size = ev.get("payload", {}).get("size", 0) or len(ev.get("payload", {}).get("commits", []))
-                      ts = datetime.datetime.fromisoformat(ev["created_at"].replace("Z", "+00:00"))
-                      local_hour = int((ts + datetime.timedelta(hours=TZ_OFFSET)).hour)
-                      hist[local_hour] += max(size, 1)
-              return hist
+                  repos.extend(batch)
+                  page += 1
+              stars = sum(r["stargazers_count"] for r in repos)
 
-          def build_svg(hist):
-              W, H = 1100, 260
-              x0, x1 = 60, 1040
-              s = (x1 - x0) / 24.0
+              return commits, days, stars
 
-              def hx(h):
-                  return x0 + h * s
+          def cell(x, label, value, color, suffix="", sub=""):
+              return f'''
+                <text x="{x}" y="66" font-family="'Courier New',monospace" font-size="15" letter-spacing="4" fill="{GRAY}">{esc(label)}</text>
+                <text x="{x}" y="116" font-family="'Courier New',monospace" font-size="50" font-weight="900" fill="{color}">
+                  {esc(value)}{suffix}
+                  <animate attributeName="opacity" values="1;0.82;1" dur="2.6s" repeatCount="indefinite"/>
+                </text>
+                <text x="{x}" y="136" font-family="'Courier New',monospace" font-size="12" fill="#6e7681">{sub}</text>'''
 
-              peak = lambda h: h >= 15 or h <= 2
-              mx = max(hist) or 1
+          def build(commits, days, stars):
+              hours = int(commits * HOURS_PER_COMMIT)
+              now = datetime.datetime.now(datetime.timezone.utc).strftime("%d.%m %H:%M")
 
-              bars = []
-              for h in range(24):
-                  frac = hist[h] / mx
-                  height = 26 + round(frac * 90)
-                  y = 212 - height
-                  col = "url(#peakBar)" if peak(h) else "#3d2f45"
-                  op = "" if peak(h) else ' opacity="0.55"'
-                  anim = ""
-                  if peak(h):
-                      begin = round((h % 12) * 0.11, 2)
-                      anim = f'<animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" begin="{begin}s" repeatCount="indefinite"/>'
-                  bars.append(
-                      f'    <rect x="{hx(h) + 9:.1f}" y="{y}" width="22" height="{height}" rx="6" fill="{col}"{op}>{anim}</rect>'
-                  )
-              bars = "\n".join(bars)
-
-              shading_l = f'<rect x="{x0}" y="84" width="{3 * s:.1f}" height="128" fill="#F7B733" opacity="0.07" rx="8"/>'
-              shading_r = f'<rect x="{hx(15):.1f}" y="84" width="{(24 - 15) * s:.1f}" height="128" fill="#F7B733" opacity="0.07" rx="8"/>'
-
-              grid = "\n".join(
-                  f'    <line x1="{hx(h):.0f}" y1="86" x2="{hx(h):.0f}" y2="212"/>' for h in (0, 6, 12, 18, 24)
-              )
-
-              labels = ""
-              for h in range(0, 24, 3):
-                  gold = ' fill="#F7B733" font-weight="700"' if h in (15, 3) else ""
-                  labels += f'    <text x="{hx(h) + 20.4:.1f}" y="238"{gold}>{h:02d}</text>\n'
-
-              total = sum(hist)
-              now = datetime.datetime.now(datetime.timezone.utc).strftime("%d.%m")
-
-              return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}">
+              svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="156" viewBox="0 0 1440 156" role="img" aria-label="Coding telemetry: commits, estimated hours, days shipping">
                 <defs>
-                  <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#0E0A12"/>
-                    <stop offset="100%" stop-color="#1A1220"/>
+                  <linearGradient id="ctbg" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#10141b"/>
+                    <stop offset="100%" stop-color="#0d1117"/>
                   </linearGradient>
-                  <linearGradient id="peakBar" x1="0" y1="1" x2="0" y2="0">
-                    <stop offset="0%" stop-color="#B98B56"/>
-                    <stop offset="100%" stop-color="#F7B733"/>
-                  </linearGradient>
-                  <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
-                    <stop offset="0%" stop-color="#F7B733"/>
-                    <stop offset="100%" stop-color="#FAEDCD"/>
-                  </linearGradient>
-                  <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-                    <feGaussianBlur stdDeviation="5" result="b"/>
-                    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-                  </filter>
                 </defs>
 
-                <rect x="5" y="5" width="1090" height="250" rx="26" fill="url(#bg2)" stroke="#2b2033" stroke-width="2"/>
+                <rect x="4" y="4" width="1432" height="148" rx="20" fill="url(#ctbg)" stroke="#232134" stroke-width="2"/>
+                <line x1="4" y1="6" x2="1436" y2="6" stroke="{PINK}" stroke-opacity="0.55"/>
+                <line x1="4" y1="150" x2="1436" y2="150" stroke="{CYAN}" stroke-opacity="0.55"/>
 
-                <text x="70" y="54" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="38" font-weight="900" letter-spacing="7" fill="url(#txt)" filter="url(#glow)">ACTIVE HOURS</text>
-                <text x="1030" y="50" font-family="ui-monospace,Menlo,monospace" font-size="20" letter-spacing="3" fill="#00E5FF" text-anchor="end">ESTIMATED FROM COMMITS &#183; N={total}</text>
+                <text x="34" y="34" font-family="'Courier New',monospace" font-size="24" font-weight="900" letter-spacing="6" fill="{GOLD}">CODING.TELEMETRY</text>
+                <circle cx="298" cy="27" r="5" fill="{PINK}">
+                  <animate attributeName="opacity" values="1;0;1" dur="1s" calcMode="discrete" repeatCount="indefinite"/>
+                </circle>
+                <text x="1406" y="32" font-family="'Courier New',monospace" font-size="14" fill="#6e7681" text-anchor="end">SYNC {esc(now)} UTC</text>
 
-                <line x1="70" y1="72" x2="1030" y2="72" stroke="#33253c" stroke-width="1"/>
+                <line x1="480" y1="52" x2="480" y2="140" stroke="#30363d"/>
+                <line x1="960" y1="52" x2="960" y2="140" stroke="#30363d"/>
 
-                <!-- peak zone shading 15:00-03:00 -->
-                {shading_l}
-                {shading_r}
-
-                <!-- grid lines -->
-                <g stroke="#241A24" stroke-width="1">
-              {grid}
+                <g>
+                  {cell(40, "TOTAL.COMMITS.PUSHED", fmt(commits), PINK, "", "counted live from github search")}
                 </g>
-                <line x1="{x0}" y1="212" x2="{x1}" y2="212" stroke="#3d2f45" stroke-width="1.5"/>
-
-                <!-- hourly commit volume (IST), synced {now} -->
-                <g filter="url(#glow)" id="bars">
-              {bars}
+                <g>
+                  {cell(520, "ESTIMATED.CODING.HOURS", fmt(hours), CYAN, "+", "&#8776; 1.25 hrs per shipped commit")}
                 </g>
-
-                <!-- sweeping now-cursor -->
-                <line y1="86" y2="212" stroke="#00E5FF" stroke-width="2" opacity="0.7" filter="url(#glow)">
-                  <animate attributeName="x1" values="{x0};{x1}" dur="14s" repeatCount="indefinite"/>
-                  <animate attributeName="x2" values="{x0};{x1}" dur="14s" repeatCount="indefinite"/>
-                </line>
-
-                <!-- hour labels -->
-                <g font-family="ui-monospace,Menlo,monospace" font-size="15" fill="#8d7b94" text-anchor="middle">
-              {labels}    </g>
-
-                <text x="1030" y="238" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#5a4a63" text-anchor="end">&#9656; remaining hours: fully automated</text>
+                <g>
+                  {cell(1000, "DAYS.ON.GRID", fmt(days), GOLD, "", f"since day zero &#183; {fmt(stars)} stars earned")}
+                </g>
               </svg>
               '''
+              pathlib.Path("assets/coding-stats.svg").write_text(svg, encoding="utf-8")
+              print(f"stats -> commits={commits} hours~{hours}+ days={days} stars={stars}")
 
-          hist = commit_histogram()
-          pathlib.Path("assets/active-hours.svg").write_text(build_svg(hist), encoding="utf-8")
-          print("histogram (IST):", dict((h, c) for h, c in enumerate(hist) if c))
+          commits, days, stars = fetch_stats()
+          build(commits, days, stars)
           PY
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit refreshed chart
+      - name: Commit refreshed stats
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/active-hours.svg
+          git add assets/coding-stats.svg
           if git diff --cached --quiet; then
-            echo "No change to active-hours"
+            echo "No change to telemetry"
           else
-            git commit -m "chore(live): refresh active hours from commits [skip ci]"
+            git commit -m "chore(live): refresh coding telemetry [skip ci]"
             git push
           fi
