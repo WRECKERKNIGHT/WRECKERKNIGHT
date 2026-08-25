@@ -1,5 +1,6 @@
 import json
 import os
+import time
 import urllib.request
 import datetime
 import pathlib
@@ -9,7 +10,7 @@ USER = "WRECKERKNIGHT"
 PINK, CYAN, GOLD, PURPLE, GRAY = "#F700FF", "#00E5FF", "#F7B733", "#B392F0", "#9aa4ad"
 
 
-def get(url):
+def get(url, retries=3):
     headers = {
         "User-Agent": "coding-telemetry",
         "Accept": "application/vnd.github+json",
@@ -18,7 +19,15 @@ def get(url):
     if token:
         headers["Authorization"] = f"Bearer {token}"
     req = urllib.request.Request(url, headers=headers)
-    return json.load(urllib.request.urlopen(req))
+    last = None
+    for attempt in range(retries):
+        try:
+            return json.load(urllib.request.urlopen(req, timeout=15))
+        except Exception as e:
+            last = e
+            print(f"  attempt {attempt + 1} failed: {e}")
+            time.sleep(5 * (attempt + 1))
+    raise last
 
 
 def esc(s):
@@ -41,16 +50,13 @@ def fetch_stats():
     return commits, prs, issues, days
 
 
-def odometer_frames(x, y, value, color, t_start, step=0.18, digits_frames=None):
-    """Stacked <text> layers that flip through rising values -> odometer roll-up."""
+def odometer_frames(x, y, value, color, t_start, step=0.18):
     v = int(str(value).replace(",", ""))
     fracs = [0.0, 0.15, 0.32, 0.52, 0.72, 0.88, 1.0]
     vals = []
     seen = set()
     for f in fracs:
-        n = int(round(v * f))
-        if f == 1.0:
-            n = v
+        n = v if f == 1.0 else int(round(v * f))
         if n not in seen:
             seen.add(n)
             vals.append(n)
@@ -58,7 +64,6 @@ def odometer_frames(x, y, value, color, t_start, step=0.18, digits_frames=None):
         vals.append(v)
 
     out = []
-    dur_total = step * len(vals) + 4.0
     for i, n in enumerate(vals):
         begin = t_start + i * step
         is_last = i == len(vals) - 1
@@ -128,7 +133,6 @@ def build(commits, prs, issues, days):
   <line x1="4" y1="6" x2="1436" y2="6" stroke="{PINK}" stroke-opacity="0.6"/>
   <line x1="4" y1="170" x2="1436" y2="170" stroke="{CYAN}" stroke-opacity="0.6"/>
 
-  <!-- scanning beam -->
   <rect x="4" y="8" width="1432" height="26" fill="url(#ctbg)" opacity="0">
     <animate attributeName="y" values="8;150;8" dur="7s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.25;0.25" dur="7s" repeatCount="indefinite"/>
@@ -149,5 +153,8 @@ def build(commits, prs, issues, days):
     print(f"stats -> commits={commits} prs={prs} issues={issues} days={days} frames_roll_on_load")
 
 
-commits, prs, issues, days = fetch_stats()
-build(commits, prs, issues, days)
+try:
+    commits, prs, issues, days = fetch_stats()
+    build(commits, prs, issues, days)
+except Exception as e:
+    print(f"all attempts failed, keeping previous file: {e}")

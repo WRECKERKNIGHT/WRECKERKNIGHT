@@ -79,6 +79,16 @@
 
 > _Nothing estimated. Commits, PRs and issues are counted live from the GitHub API; numbers roll up on every page load._
 
+---
+
+## ⏳ Hours Spent Coding
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/hours-banner.svg" width="100%" alt="Hours spent coding: counted from real commit volume" />
+</p>
+
+> _Derived from real commit volume on public repos (~1.25 hrs per shipped commit) — not wall-clock tracking. Odometer rolls up on every page load._
+
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=WRECKERKNIGHT&theme=solarized_dark" width="100%" alt="Activity heatmap" />
 </p>

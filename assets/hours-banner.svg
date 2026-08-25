@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="236" viewBox="0 0 1440 236" role="img" aria-label="Hours spent coding">
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#160f1d"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="hourgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F700FF"/>
+      <stop offset="55%" stop-color="#C77DFF"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+    <filter id="glow2" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- hidden master clock -->
+  <rect width="0" height="0" fill="none">
+    <animate id="cycle" attributeName="x" values="0;0" dur="9s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="4" y="4" width="1432" height="228" rx="26" fill="url(#hbg)" stroke="#232134" stroke-width="2"/>
+  <line x1="4" y1="6" x2="1436" y2="6" stroke="#F700FF" stroke-opacity="0.65"/>
+  <line x1="4" y1="230" x2="1436" y2="230" stroke="#00E5FF" stroke-opacity="0.65"/>
+
+  <!-- scanning beam -->
+  <rect x="4" y="8" width="1432" height="34" fill="#ffffff" opacity="0">
+    <animate attributeName="y" values="8;196;8" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.05;0.05" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- corner brackets -->
+  <path d="M28 34 h22 M28 34 v22" stroke="#F700FF" stroke-width="3" fill="none"/>
+  <path d="M1412 34 h-22 M1412 34 v22" stroke="#00E5FF" stroke-width="3" fill="none"/>
+  <path d="M28 202 h22 M28 202 v-22" stroke="#00E5FF" stroke-width="3" fill="none"/>
+  <path d="M1412 202 h-22 M1412 202 v-22" stroke="#F700FF" stroke-width="3" fill="none"/>
+
+  <text x="64" y="66" font-family="'Courier New',monospace" font-size="21" font-weight="bold" letter-spacing="8" fill="#F7B733">HOURS.SPENT.CODING</text>
+  <circle cx="392" cy="59" r="6" fill="#F700FF">
+    <animate attributeName="opacity" values="1;0.15;1" dur="0.85s" calcMode="discrete" repeatCount="indefinite"/>
+  </circle>
+
+      <text x="64" y="172" font-family="'Courier New',monospace" font-size="118" font-weight="900" fill="url(#hourgrad)" opacity="0" filter="url(#glow2)">0<animate attributeName="opacity" begin="cycle.begin+0.35s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+0.57s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
+      <text x="64" y="172" font-family="'Courier New',monospace" font-size="118" font-weight="900" fill="url(#hourgrad)" opacity="0" filter="url(#glow2)">135<animate attributeName="opacity" begin="cycle.begin+0.57s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+0.79s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
+      <text x="64" y="172" font-family="'Courier New',monospace" font-size="118" font-weight="900" fill="url(#hourgrad)" opacity="0" filter="url(#glow2)">289<animate attributeName="opacity" begin="cycle.begin+0.79s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+1.01s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
+      <text x="64" y="172" font-family="'Courier New',monospace" font-size="118" font-weight="900" fill="url(#hourgrad)" opacity="0" filter="url(#glow2)">470<animate attributeName="opacity" begin="cycle.begin+1.01s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+1.23s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
+      <text x="64" y="172" font-family="'Courier New',monospace" font-size="118" font-weight="900" fill="url(#hourgrad)" opacity="0" filter="url(#glow2)">650<animate attributeName="opacity" begin="cycle.begin+1.23s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+1.45s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
+      <text x="64" y="172" font-family="'Courier New',monospace" font-size="118" font-weight="900" fill="url(#hourgrad)" opacity="0" filter="url(#glow2)">795<animate attributeName="opacity" begin="cycle.begin+1.45s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+1.67s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
+      <text x="64" y="172" font-family="'Courier New',monospace" font-size="118" font-weight="900" fill="url(#hourgrad)" opacity="0" filter="url(#glow2)">903<animate attributeName="opacity" begin="cycle.begin+1.67s" dur="0.01s" values="0;1" calcMode="discrete" fill="freeze" repeatCount="1"/></text>
+
+  <!-- context column -->
+  <g font-family="'Courier New',monospace" font-weight="bold" text-anchor="end">
+    <text x="1396" y="92" font-size="20" fill="#9aa4ad">FROM <tspan fill="#00E5FF">723</tspan> SHIPPED COMMITS</text>
+    <text x="1396" y="126" font-size="20" fill="#9aa4ad">FORMULA <tspan fill="#F7B733">&#8776;1.25H</tspan> PER COMMIT</text>
+    <text x="1396" y="160" font-size="17" fill="#6e7681">LIVE.SYNC 25.08 16:05 UTC
+      <animate attributeName="opacity" values="1;0.45;1" dur="2.4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <line x1="1020" y1="52" x2="1020" y2="188" stroke="#30363d"/>
+
+  <text x="64" y="216" font-family="'Courier New',monospace" font-size="12.5" fill="#6e7681">* derived from real commit volume on public repos &#8212; not wall-clock tracking &#183; refreshed every 30 minutes</text>
+</svg>
