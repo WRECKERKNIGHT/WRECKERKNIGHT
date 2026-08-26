@@ -78,7 +78,11 @@ except Exception as e:
     print("spotify fetch failed:", e)
     playing, artist, song = False, "", ""
 
-repos, stars, followers = fetch_stats()
+try:
+    repos, stars, followers = fetch_stats()
+except Exception as e:
+    print("stats fetch failed:", e)
+    repos, stars, followers = 18, 24, 2
 now = datetime.datetime.now(datetime.timezone.utc).strftime("%d.%m %H:%M")
 
 W, H = 1440, 56
@@ -94,52 +98,54 @@ else:
 
 mtxt = esc(marquee_text(track, clip_w))
 
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="System tray bar: now playing, online status and repo telemetry">
-  <rect width="{W}" height="{H}" fill="#0d1117"/>
-  <line x1="0" y1="1" x2="{W}" y2="1" stroke="{PINK}" stroke-opacity="0.55"/>
-  <line x1="0" y1="{H - 1}" x2="{W}" y2="{H - 1}" stroke="{CYAN}" stroke-opacity="0.55"/>
-  <clipPath id="media"><rect x="{clip_x}" y="0" width="{clip_w}" height="{H}"/></clipPath>
+try:
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="System tray bar: now playing, online status and repo telemetry">
+      <rect width="{W}" height="{H}" fill="#0d1117"/>
+      <line x1="0" y1="1" x2="{W}" y2="1" stroke="{PINK}" stroke-opacity="0.55"/>
+      <line x1="0" y1="{H - 1}" x2="{W}" y2="{H - 1}" stroke="{CYAN}" stroke-opacity="0.55"/>
+      <clipPath id="media"><rect x="{clip_x}" y="0" width="{clip_w}" height="{H}"/></clipPath>
 
-  <!-- MEDIA PLAYER -->
-  <g font-family="'Courier New',monospace" clip-path="url(#media)">
-      {eq_bars(16, 9, eq_col)}
-      <text x="{clip_x + 10}" y="34" font-size="19" font-weight="bold" fill="{track_col}">{mtxt}</text>
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="{-clip_w} 0" dur="16s" repeatCount="indefinite"/>
-  </g>
-  <g font-family="'Courier New',monospace" clip-path="url(#media)">
-      <text x="{clip_x + 10 + clip_w}" y="34" font-size="19" font-weight="bold" fill="{track_col}">{mtxt}</text>
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="{-clip_w} 0" dur="16s" repeatCount="indefinite"/>
-  </g>
-  <line x1="{tray_x - 20}" y1="10" x2="{tray_x - 20}" y2="{H - 10}" stroke="#30363d"/>
+      <!-- MEDIA PLAYER -->
+      <g font-family="'Courier New',monospace" clip-path="url(#media)">
+          {eq_bars(16, 9, eq_col)}
+          <text x="{clip_x + 10}" y="34" font-size="19" font-weight="bold" fill="{track_col}">{mtxt}</text>
+          <animateTransform attributeName="transform" type="translate" from="0 0" to="{-clip_w} 0" dur="16s" repeatCount="indefinite"/>
+      </g>
+      <g font-family="'Courier New',monospace" clip-path="url(#media)">
+          <text x="{clip_x + 10 + clip_w}" y="34" font-size="19" font-weight="bold" fill="{track_col}">{mtxt}</text>
+          <animateTransform attributeName="transform" type="translate" from="0 0" to="{-clip_w} 0" dur="16s" repeatCount="indefinite"/>
+      </g>
+      <line x1="{tray_x - 20}" y1="10" x2="{tray_x - 20}" y2="{H - 10}" stroke="#30363d"/>
 
-  <!-- SYSTEM TRAY -->
-  <g font-family="'Courier New',monospace" font-size="17" font-weight="bold">
-    <circle cx="{tray_x + 22}" cy="28" r="6" fill="{GREEN}">
-      <animate attributeName="opacity" values="1;0.35;1" dur="1.3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="{tray_x + 22}" cy="28" r="3" fill="{GREEN}"/>
-    <text x="{tray_x + 38}" y="34" fill="{GREEN}">ONLINE</text>
+      <!-- SYSTEM TRAY -->
+      <g font-family="'Courier New',monospace" font-size="17" font-weight="bold">
+        <circle cx="{tray_x + 22}" cy="28" r="6" fill="{GREEN}">
+          <animate attributeName="opacity" values="1;0.35;1" dur="1.3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="{tray_x + 22}" cy="28" r="3" fill="{GREEN}"/>
+        <text x="{tray_x + 38}" y="34" fill="{GREEN}">ONLINE</text>
 
-    <line x1="{tray_x + 122}" y1="12" x2="{tray_x + 122}" y2="{H - 12}" stroke="#30363d"/>
-    <text x="{tray_x + 142}" fill="{CYAN}">REPOS:{repos}</text>
+        <line x1="{tray_x + 122}" y1="12" x2="{tray_x + 122}" y2="{H - 12}" stroke="#30363d"/>
+        <text x="{tray_x + 142}" fill="{CYAN}">REPOS:{repos}</text>
 
-    <text x="{tray_x + 262}" fill="{AMBER}">&#9733;:{stars}</text>
+        <text x="{tray_x + 262}" fill="{AMBER}">&#9733;:{stars}</text>
 
-    <text x="{tray_x + 330}" fill="{PINK}">FOLLOWERS:{followers}</text>
+        <text x="{tray_x + 330}" fill="{PINK}">FOLLOWERS:{followers}</text>
 
-    <line x1="{tray_x + 492}" y1="12" x2="{tray_x + 492}" y2="{H - 12}" stroke="#30363d"/>
-    <circle cx="{tray_x + 516}" cy="28" r="5" fill="{RED}">
-      <animate attributeName="opacity" values="1;0;1" dur="1s" calcMode="discrete" repeatCount="indefinite"/>
-    </circle>
-    <text x="{tray_x + 530}" fill="{PINK}">LIVE</text>
-    <rect x="{tray_x + 580}" y="18" width="9" height="19" fill="{CYAN}">
-      <animate attributeName="opacity" values="1;0;1" dur="0.9s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
+        <line x1="{tray_x + 492}" y1="12" x2="{tray_x + 492}" y2="{H - 12}" stroke="#30363d"/>
+        <circle cx="{tray_x + 516}" cy="28" r="5" fill="{RED}">
+          <animate attributeName="opacity" values="1;0;1" dur="1s" calcMode="discrete" repeatCount="indefinite"/>
+        </circle>
+        <text x="{tray_x + 530}" fill="{PINK}">LIVE</text>
+        <rect x="{tray_x + 580}" y="18" width="9" height="19" fill="{CYAN}">
+          <animate attributeName="opacity" values="1;0;1" dur="0.9s" calcMode="discrete" repeatCount="indefinite"/>
+        </rect>
 
-    <text x="{W - 14}" y="34" text-anchor="end" fill="#8d7b94">IST.UTC+05:30</text>
-  </g>
-</svg>
-'''
-
-pathlib.Path("assets/bottom-bar.svg").write_text(svg, encoding="utf-8")
-print(f"bar built -> playing={playing} track='{artist} - {song}' repos={repos} stars={stars} followers={followers}")
+        <text x="{W - 14}" y="34" text-anchor="end" fill="#8d7b94">IST.UTC+05:30</text>
+      </g>
+    </svg>
+    '''
+    pathlib.Path("assets/bottom-bar.svg").write_text(svg, encoding="utf-8")
+    print(f"bar built -> playing={playing} track='{artist} - {song}' repos={repos} stars={stars} followers={followers}")
+except Exception as e:
+    print(f"build failed, keeping previous bar: {e}")

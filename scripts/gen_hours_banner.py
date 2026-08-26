@@ -135,17 +135,20 @@ def build(hours, commits, sync):
     print(f"banner -> {fmt(hours)}+ hours from {commits} commits")
 
 
-commits = None
-for attempt in range(3):
-    try:
-        commits = fetch_commits()
-        break
-    except Exception as e:
-        print(f"commit fetch attempt {attempt + 1} failed: {e}")
-        time.sleep(6)
+try:
+    commits = None
+    for attempt in range(3):
+        try:
+            commits = fetch_commits()
+            break
+        except Exception as e:
+            print(f"commit fetch attempt {attempt + 1} failed: {e}")
+            time.sleep(6)
 
-if commits is None:
-    print("all attempts failed - keeping previous banner")
-else:
-    build(int(commits * HOURS_PER_COMMIT), commits,
-          datetime.datetime.now(datetime.timezone.utc).strftime("%d.%m %H:%M"))
+    if commits is None:
+        print("all attempts failed - keeping previous banner")
+    else:
+        build(int(commits * HOURS_PER_COMMIT), commits,
+              datetime.datetime.now(datetime.timezone.utc).strftime("%d.%m %H:%M"))
+except Exception as e:
+    print(f"banner failed, keeping previous: {e}")

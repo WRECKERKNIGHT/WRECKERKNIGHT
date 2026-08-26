@@ -39,11 +39,13 @@
 
 ---
 
-## 📈 Live Contribution Graph
+## 📈 Live Contribution Grid
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=WRECKERKNIGHT&theme=react-dark" width="100%" alt="Contribution activity graph" />
+  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/contribution-grid.svg" width="100%" alt="Contribution heatmap grid — built from real GitHub event data, not a third-party service" />
 </p>
+
+> _17 weeks of real activity, counted from your public events. Brighter = more commits that day. Auto-refreshes every 30 minutes._
 
 ---
 
@@ -190,8 +192,6 @@ The flagship I'm actively building — an AI face-analysis studio with a paramet
 Repos on this account are maintained with automated CI (lint + typecheck + build), GitHub Actions, and GitHub Pages where applicable — this profile included. Everything else above updates itself while I sleep.
 
 </details>
-
----
 
 ## 📟 System Tray — pinned feed
 
