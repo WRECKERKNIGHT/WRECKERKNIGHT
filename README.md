@@ -39,13 +39,11 @@
 
 ---
 
-## 📈 Live Contribution Grid
+## 📈 Live Contribution Graph
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WRECKERKNIGHT/WRECKERKNIGHT/main/assets/contribution-grid.svg" width="100%" alt="Contribution heatmap grid — built from real GitHub event data, not a third-party service" />
+  <img src="https://github-activity-chart.vercel.app/graph?username=WRECKERKNIGHT&theme=react-dark" width="100%" alt="Contribution activity graph" />
 </p>
-
-> _17 weeks of real activity, counted from your public events. Brighter = more commits that day. Auto-refreshes every 30 minutes._
 
 ---
 
