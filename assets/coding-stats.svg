@@ -28,7 +28,7 @@
   <circle cx="310" cy="29" r="6" fill="#F700FF">
     <animate attributeName="opacity" values="1;0.2;1" dur="0.9s" calcMode="discrete" repeatCount="indefinite"/>
   </circle>
-  <text x="1406" y="34" font-family="'Courier New',monospace" font-size="14" fill="#6e7681" text-anchor="end">SYNC 28.08 23:37 UTC</text>
+  <text x="1406" y="34" font-family="'Courier New',monospace" font-size="14" fill="#6e7681" text-anchor="end">SYNC 29.08 05:04 UTC</text>
 
 
     <!-- TOTAL.COMMITS.PUSHED -->

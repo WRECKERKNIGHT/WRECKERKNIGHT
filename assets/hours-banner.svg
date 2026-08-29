@@ -53,7 +53,7 @@
   <g font-family="'Courier New',monospace" font-weight="bold" text-anchor="end">
     <text x="1396" y="92" font-size="20" fill="#9aa4ad">FROM <tspan fill="#00E5FF">758</tspan> SHIPPED COMMITS</text>
     <text x="1396" y="126" font-size="20" fill="#9aa4ad">FORMULA <tspan fill="#F7B733">&#8776;1.25H</tspan> PER COMMIT</text>
-    <text x="1396" y="160" font-size="17" fill="#6e7681">LIVE.SYNC 28.08 23:37 UTC
+    <text x="1396" y="160" font-size="17" fill="#6e7681">LIVE.SYNC 29.08 05:04 UTC
       <animate attributeName="opacity" values="1;0.45;1" dur="2.4s" repeatCount="indefinite"/>
     </text>
   </g>
