@@ -28,7 +28,7 @@
   <circle cx="310" cy="29" r="6" fill="#F700FF">
     <animate attributeName="opacity" values="1;0.2;1" dur="0.9s" calcMode="discrete" repeatCount="indefinite"/>
   </circle>
-  <text x="1406" y="34" font-family="'Courier New',monospace" font-size="14" fill="#6e7681" text-anchor="end">SYNC 29.08 21:52 UTC</text>
+  <text x="1406" y="34" font-family="'Courier New',monospace" font-size="14" fill="#6e7681" text-anchor="end">SYNC 30.08 08:48 UTC</text>
 
 
     <!-- TOTAL.COMMITS.PUSHED -->
@@ -70,9 +70,9 @@
       <text x="1120" y="118" font-family="'Courier New',monospace" font-size="46" font-weight="900" fill="#F7B733" opacity="0" filter="url(#glow)">77<animate attributeName="opacity" begin="cycle.begin+1.88s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+2.06s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
       <text x="1120" y="118" font-family="'Courier New',monospace" font-size="46" font-weight="900" fill="#F7B733" opacity="0" filter="url(#glow)">164<animate attributeName="opacity" begin="cycle.begin+2.06s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+2.24s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
       <text x="1120" y="118" font-family="'Courier New',monospace" font-size="46" font-weight="900" fill="#F7B733" opacity="0" filter="url(#glow)">266<animate attributeName="opacity" begin="cycle.begin+2.24s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+2.42s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
-      <text x="1120" y="118" font-family="'Courier New',monospace" font-size="46" font-weight="900" fill="#F7B733" opacity="0" filter="url(#glow)">368<animate attributeName="opacity" begin="cycle.begin+2.42s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+2.60s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
-      <text x="1120" y="118" font-family="'Courier New',monospace" font-size="46" font-weight="900" fill="#F7B733" opacity="0" filter="url(#glow)">450<animate attributeName="opacity" begin="cycle.begin+2.60s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+2.78s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
-      <text x="1120" y="118" font-family="'Courier New',monospace" font-size="46" font-weight="900" fill="#F7B733" opacity="0" filter="url(#glow)">511<animate attributeName="opacity" begin="cycle.begin+2.78s" dur="0.01s" values="0;1" calcMode="discrete" fill="freeze" repeatCount="1"/></text>
+      <text x="1120" y="118" font-family="'Courier New',monospace" font-size="46" font-weight="900" fill="#F7B733" opacity="0" filter="url(#glow)">369<animate attributeName="opacity" begin="cycle.begin+2.42s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+2.60s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
+      <text x="1120" y="118" font-family="'Courier New',monospace" font-size="46" font-weight="900" fill="#F7B733" opacity="0" filter="url(#glow)">451<animate attributeName="opacity" begin="cycle.begin+2.60s" dur="0.01s" values="0;1" calcMode="discrete" repeatCount="1"/><animate attributeName="opacity" begin="cycle.begin+2.78s" dur="0.01s" values="1;0" calcMode="discrete" repeatCount="1"/></text>
+      <text x="1120" y="118" font-family="'Courier New',monospace" font-size="46" font-weight="900" fill="#F7B733" opacity="0" filter="url(#glow)">512<animate attributeName="opacity" begin="cycle.begin+2.78s" dur="0.01s" values="0;1" calcMode="discrete" fill="freeze" repeatCount="1"/></text>
     <text x="1120" y="138" font-family="'Courier New',monospace" font-size="11.5" fill="#6e7681">day zero &#8594; now &#183; non-stop</text>
 
   <text x="34" y="163" font-family="'Courier New',monospace" font-size="12.5" fill="#6e7681">&#9679; NOTHING.ESTIMATED &#8212; every number above is counted directly from the github api</text>
