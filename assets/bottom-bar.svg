@@ -15,11 +15,11 @@
       <rect x="82" y="37" width="5" height="9" fill="#444c56"><animate attributeName="height" values="9;14;5;23;5;23" dur="0.68s" begin="-0.54s" repeatCount="indefinite"/><animate attributeName="y" values="37;32;41;23;41;23" dur="0.68s" begin="-0.54s" repeatCount="indefinite"/></rect>
       <rect x="93" y="37" width="5" height="9" fill="#444c56"><animate attributeName="height" values="9;19;23;19;14;19" dur="0.94s" begin="-0.63s" repeatCount="indefinite"/><animate attributeName="y" values="37;27;23;27;32;27" dur="0.94s" begin="-0.63s" repeatCount="indefinite"/></rect>
       <rect x="104" y="27" width="5" height="19" fill="#444c56"><animate attributeName="height" values="19;14;14;9;9;9" dur="0.69s" begin="-0.72s" repeatCount="indefinite"/><animate attributeName="y" values="27;32;32;37;37;37" dur="0.69s" begin="-0.72s" repeatCount="indefinite"/></rect>
-          <text x="140" y="34" font-size="19" font-weight="bold" fill="#F7B733"> SPOTIFY.IDLE ▸ NOTHING.PLAYING ▸ QUEUE.OPEN ▸ SYNC 05.09 20:52 UTC </text>
+          <text x="140" y="34" font-size="19" font-weight="bold" fill="#F7B733"> SPOTIFY.IDLE ▸ NOTHING.PLAYING ▸ QUEUE.OPEN ▸ SYNC 05.09 22:33 UTC </text>
           <animateTransform attributeName="transform" type="translate" from="0 0" to="-470 0" dur="16s" repeatCount="indefinite"/>
       </g>
       <g font-family="'Courier New',monospace" clip-path="url(#media)">
-          <text x="610" y="34" font-size="19" font-weight="bold" fill="#F7B733"> SPOTIFY.IDLE ▸ NOTHING.PLAYING ▸ QUEUE.OPEN ▸ SYNC 05.09 20:52 UTC </text>
+          <text x="610" y="34" font-size="19" font-weight="bold" fill="#F7B733"> SPOTIFY.IDLE ▸ NOTHING.PLAYING ▸ QUEUE.OPEN ▸ SYNC 05.09 22:33 UTC </text>
           <animateTransform attributeName="transform" type="translate" from="0 0" to="-470 0" dur="16s" repeatCount="indefinite"/>
       </g>
       <line x1="620" y1="10" x2="620" y2="46" stroke="#30363d"/>
